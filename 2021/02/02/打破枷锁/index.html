@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+  </script>
+<meta name="description" content="小米路由器4A千兆版刷机&amp;nbsp; &amp;nbsp;去年双十一买了个小米4A千兆版的路由器，本来对路由方面一窍不通，却就此打开了新世界的大门。为了能实现ipv6的网络串流，软磨硬泡的找宽带师傅要到了移动光猫的超密（网上的密码一般都是初始超密，但超密会变的，所以最方便的还是找师傅要），之前询问客服和师傅，要求把光猫改为桥接，要不就说改不了，要不就说不会，好吧，自己动手，丰衣足食。 &amp;nbsp; &amp;nb">
+<meta property="og:type" content="article">
+<meta property="og:title" content="打破枷锁">
+<meta property="og:url" content="http://example.com/2021/02/02/%E6%89%93%E7%A0%B4%E6%9E%B7%E9%94%81/index.html">
+<meta property="og:site_name" content="斯是陋室惟吾德馨">
+<meta property="og:description" content="小米路由器4A千兆版刷机&amp;nbsp; &amp;nbsp;去年双十一买了个小米4A千兆版的路由器，本来对路由方面一窍不通，却就此打开了新世界的大门。为了能实现ipv6的网络串流，软磨硬泡的找宽带师傅要到了移动光猫的超密（网上的密码一般都是初始超密，但超密会变的，所以最方便的还是找师傅要），之前询问客服和师傅，要求把光猫改为桥接，要不就说改不了，要不就说不会，好吧，自己动手，丰衣足食。 &amp;nbsp; &amp;nb">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2021/02/02/%E6%89%93%E7%A0%B4%E6%9E%B7%E9%94%81/winscp.png">
+<meta property="og:image" content="http://example.com/2021/02/02/%E6%89%93%E7%A0%B4%E6%9E%B7%E9%94%81/breed后台.png">
+<meta property="og:image" content="http://example.com/2021/02/02/%E6%89%93%E7%A0%B4%E6%9E%B7%E9%94%81/breed后台2.png">
+<meta property="og:image" content="http://example.com/2021/02/02/%E6%89%93%E7%A0%B4%E6%9E%B7%E9%94%81/breed后台3.png">
+<meta property="og:image" content="http://example.com/2021/02/02/%E6%89%93%E7%A0%B4%E6%9E%B7%E9%94%81/padavan后台.jpg">
+<meta property="article:published_time" content="2021-02-02T13:23:47.000Z">
+<meta property="article:modified_time" content="2021-02-03T17:59:04.903Z">
+<meta property="article:author" content="小炒面">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2021/02/02/%E6%89%93%E7%A0%B4%E6%9E%B7%E9%94%81/winscp.png">
+
+
+<link rel="canonical" href="http://example.com/2021/02/02/%E6%89%93%E7%A0%B4%E6%9E%B7%E9%94%81/">
+
+
+<script data-pjax class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>打破枷锁 | 斯是陋室惟吾德馨</title>
+  
+
+  <script data-pjax>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?137990a9649e006d4045fd36d776d194";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">斯是陋室惟吾德馨</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A84A%E5%8D%83%E5%85%86%E7%89%88%E5%88%B7%E6%9C%BA"><span class="nav-number">1.</span> <span class="nav-text">小米路由器4A千兆版刷机</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81-%E5%AE%89%E8%A3%85ubuntu%EF%BC%8C%E5%8F%AF%E5%9C%A8win10%E5%95%86%E5%BA%97%E4%B8%AD%E4%B8%8B%E8%BD%BD%EF%BC%8C%E6%88%91%E7%9A%84%E6%98%AF20-04-1%E7%89%88%E6%9C%AC"><span class="nav-number">1.1.</span> <span class="nav-text">一、 安装ubuntu，可在win10商店中下载，我的是20.04.1版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E6%9B%B4%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90"><span class="nav-number">1.2.</span> <span class="nav-text">二、更换国内源</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%9C%A8ubuntu%E4%B8%AD%E5%A4%87%E4%BB%BD%E6%BA%90%E6%96%87%E4%BB%B6%EF%BC%88%E8%8B%A5%E5%B7%B2%E8%BF%9B%E5%85%A5%E7%AE%A1%E7%90%86%E5%91%98%E6%A8%A1%E5%BC%8F%EF%BC%8C%E5%8F%AF%E5%88%A0%E9%99%A4sudo%EF%BC%89"><span class="nav-number">1.2.1.</span> <span class="nav-text">1. 在ubuntu中备份源文件（若已进入管理员模式，可删除sudo）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E7%BC%96%E8%BE%91%E6%BA%90%E6%96%87%E4%BB%B6"><span class="nav-number">1.2.2.</span> <span class="nav-text">2. 编辑源文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E6%9B%B4%E6%96%B0%E6%BA%90"><span class="nav-number">1.2.3.</span> <span class="nav-text">3. 更新源</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%AE%89%E8%A3%85python3"><span class="nav-number">1.3.</span> <span class="nav-text">三、安装python3</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E7%94%B5%E8%84%91%E8%BF%9E%E6%8E%A5%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8"><span class="nav-number">1.4.</span> <span class="nav-text">四、电脑连接小米路由器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E5%9C%A8ubuntu%E4%B8%AD%E5%B0%86%E4%BB%A3%E7%A0%81%E6%8B%89%E5%88%B0%E6%9C%AC%E5%9C%B0"><span class="nav-number">1.5.</span> <span class="nav-text">五、在ubuntu中将代码拉到本地</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AD%E3%80%81%E5%88%A9%E7%94%A8%E6%BC%8F%E6%B4%9E%E5%BC%80%E5%90%AFtelnet"><span class="nav-number">1.6.</span> <span class="nav-text">六、利用漏洞开启telnet</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%83%E3%80%81telnet%E8%BF%9E%E6%8E%A5%E8%B7%AF%E7%94%B1%E5%99%A8%EF%BC%8C%E5%85%88%E5%A4%87%E4%BB%BDeeprom-%E9%9D%9E%E5%B8%B8%E9%87%8D%E8%A6%81%EF%BC%89"><span class="nav-number">1.7.</span> <span class="nav-text">七、telnet连接路由器，先备份eeprom(非常重要）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AB%E3%80%81%E8%8E%B7%E5%8F%96breed"><span class="nav-number">1.8.</span> <span class="nav-text">八、获取breed</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B9%9D%E3%80%81%E5%B0%86%E5%A4%87%E4%BB%BD%E7%9A%84eeprom%E4%BF%9D%E5%AD%98%E5%88%B0%E6%9C%AC%E5%9C%B0"><span class="nav-number">1.9.</span> <span class="nav-text">九、将备份的eeprom保存到本地</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%81%E3%80%81%E5%88%B7breed"><span class="nav-number">1.10.</span> <span class="nav-text">十、刷breed</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%81%E4%B8%80%E3%80%81%E5%88%B7%E5%9B%BA%E4%BB%B6"><span class="nav-number">1.11.</span> <span class="nav-text">十一、刷固件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%85%88%E8%AE%BF%E9%97%AE%E5%9B%BA%E4%BB%B6%E5%A4%87%E4%BB%BD%EF%BC%8C%E4%B8%A4%E4%B8%AA%E9%80%89%E9%A1%B9%E9%83%BD%E5%A4%87%E4%BB%BD%E4%B8%8B%EF%BC%8CEEPROM%E3%80%81%E7%BC%96%E7%A8%8B%E5%99%A8%E5%9B%BA%E4%BB%B6-%E9%83%BD%E9%9C%80%E8%A6%81%E5%A4%87%E4%BB%BD%E4%B8%80%E4%B8%8B%EF%BC%8C%E4%BB%A5%E5%85%8D%E5%8F%98%E7%A0%96%EF%BC%9B%E4%BB%A5%E9%98%B2%E4%B8%87%E4%B8%80%E5%89%8D%E5%BE%80-MAC%E5%9C%B0%E5%9D%80%E4%BF%AE%E6%94%B9-%E6%88%AA%E5%9B%BE%E6%89%80%E6%9C%89MAC%E5%9C%B0%E5%9D%80%EF%BC%8C%E5%89%8D%E5%BE%80%E5%9B%BA%E4%BB%B6%E6%9B%B4%E6%96%B0%E6%B7%BB%E5%8A%A0%E5%A4%87%E4%BB%BD%E7%9A%84EEPEOM"><span class="nav-number">1.11.1.</span> <span class="nav-text">1. 先访问固件备份，两个选项都备份下，EEPROM、编程器固件  都需要备份一下，以免变砖；以防万一前往 MAC地址修改 截图所有MAC地址，前往固件更新添加备份的EEPEOM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E8%8E%B7%E5%8F%96padavan%E5%9B%BA%E4%BB%B6"><span class="nav-number">1.11.2.</span> <span class="nav-text">2. 获取padavan固件</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="小炒面"
+      src="/uploads/%E7%B2%BE%E7%A5%9E%E5%B0%8F%E5%A6%B9.jpg">
+  <p class="site-author-name" itemprop="name">小炒面</p>
+  <div class="site-description" itemprop="description">吾之生前，万籁俱寂<br>吾之身后，了无生机</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/02/%E6%89%93%E7%A0%B4%E6%9E%B7%E9%94%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/%E7%B2%BE%E7%A5%9E%E5%B0%8F%E5%A6%B9.jpg">
+      <meta itemprop="name" content="小炒面">
+      <meta itemprop="description" content="吾之生前，万籁俱寂<br>吾之身后，了无生机">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="斯是陋室惟吾德馨">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          打破枷锁
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-02-02 21:23:47" itemprop="dateCreated datePublished" datetime="2021-02-02T21:23:47+08:00">2021-02-02</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-02-04 01:59:04" itemprop="dateModified" datetime="2021-02-04T01:59:04+08:00">2021-02-04</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="小米路由器4A千兆版刷机"><a href="#小米路由器4A千兆版刷机" class="headerlink" title="小米路由器4A千兆版刷机"></a>小米路由器4A千兆版刷机</h1><p>&nbsp; &nbsp;去年双十一买了个小米4A千兆版的路由器，本来对路由方面一窍不通，却就此打开了新世界的大门。为了能实现ipv6的网络串流，软磨硬泡的找宽带师傅要到了移动光猫的超密（网上的密码一般都是初始超密，但超密会变的，所以最方便的还是找师傅要），之前询问客服和师傅，要求把光猫改为桥接，要不就说改不了，要不就说不会，好吧，自己动手，丰衣足食。</p>
+<p>&nbsp; &nbsp;其实改桥接挺简单的，这里就不多说了，网上都有教程，改前一定要在光猫配置页截图，一定要在光猫配置页截图，一定要截图！改完桥接以后就可以使用路由器拨号连接了，网速确实快了不少。然后我们就可以着手准备刷路由器了，其实我本来不想折腾的，<strong>可是小米这款路由器太坑了，没法正常的关掉防火墙</strong>，结果我就没办法通过公网ipv6串流到家里的电脑，当初不懂折腾了半天，<strong>坑！</strong></p>
+<p>&nbsp; &nbsp;先感谢一下恩山无线论坛的大佬，下面正式开始刷机</p>
+<hr>
+<p>&nbsp; &nbsp;我是用的win10+ubuntu刷的，一定要确保全程用网线连接路由器</p>
+<h2 id="一、-安装ubuntu，可在win10商店中下载，我的是20-04-1版本"><a href="#一、-安装ubuntu，可在win10商店中下载，我的是20-04-1版本" class="headerlink" title="一、 安装ubuntu，可在win10商店中下载，我的是20.04.1版本"></a>一、 安装ubuntu，可在win10商店中下载，我的是20.04.1版本</h2><p>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;为了方便后续操作，先进入管理员模式，输入sudo -i  然后输入密码即可</p>
+<h2 id="二、更换国内源"><a href="#二、更换国内源" class="headerlink" title="二、更换国内源"></a>二、更换国内源</h2><h3 id="1-在ubuntu中备份源文件（若已进入管理员模式，可删除sudo）"><a href="#1-在ubuntu中备份源文件（若已进入管理员模式，可删除sudo）" class="headerlink" title="1. 在ubuntu中备份源文件（若已进入管理员模式，可删除sudo）"></a>1. 在ubuntu中备份源文件（若已进入管理员模式，可删除sudo）</h3><blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak</p>
+</blockquote>
+<h3 id="2-编辑源文件"><a href="#2-编辑源文件" class="headerlink" title="2. 编辑源文件"></a>2. 编辑源文件</h3><blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sudo vi /etc/apt/sources.list</p>
+</blockquote>
+<p>&nbsp; &nbsp;记得在英文模式下输入：按两下d键会删除一行，就这样删除所有内容，然后按i进入编辑模式，将下面清华大学的源复制进去</p>
+<blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deb <a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic main restricted universe multiverse</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deb-src <a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic main restricted universe multiverse</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deb <a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-updates main restricted universe multiverse</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deb-src <a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-updates main restricted universe multiverse</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deb <a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-backports main restricted universe multiverse</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deb-src <a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-backports main restricted universe multiverse</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deb <a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-security main restricted universe multiverse</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deb-src <a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-security main restricted universe multiverse</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deb <a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-proposed main restricted universe multiverse</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deb-src <a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu/">https://mirrors.tuna.tsinghua.edu.cn/ubuntu/</a> bionic-proposed main restricted universe multiverse</p>
+</blockquote>
+<p>&nbsp; &nbsp;然后点ESC，输入  :wq!  然后回车即可</p>
+<h3 id="3-更新源"><a href="#3-更新源" class="headerlink" title="3. 更新源"></a>3. 更新源</h3><blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sudo apt update</p>
+</blockquote>
+<h2 id="三、安装python3"><a href="#三、安装python3" class="headerlink" title="三、安装python3"></a>三、安装python3</h2><blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sudo apt-get install python3.6</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sudo apt-get install python3-pip</p>
+</blockquote>
+<h2 id="四、电脑连接小米路由器"><a href="#四、电脑连接小米路由器" class="headerlink" title="四、电脑连接小米路由器"></a>四、电脑连接小米路由器</h2><p>&nbsp; &nbsp;电脑浏览器打开小米路由器管理页面&nbsp;&nbsp;&nbsp;&nbsp;192.168.31.1&nbsp;&nbsp;&nbsp;&nbsp;不要关闭</p>
+<h2 id="五、在ubuntu中将代码拉到本地"><a href="#五、在ubuntu中将代码拉到本地" class="headerlink" title="五、在ubuntu中将代码拉到本地"></a>五、在ubuntu中将代码拉到本地</h2><p>&nbsp; &nbsp;把&nbsp;<a target="_blank" rel="noopener" href="https://github.com/acecilia/OpenWRTInvasion">https://github.com/acecilia/OpenWRTInvasion</a>&nbsp;的代码利用下面的命令下载下来</p>
+<blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;git clone <a target="_blank" rel="noopener" href="https://github.com/shenmeiqian/OpenWRTInvasion.git">https://github.com/shenmeiqian/OpenWRTInvasion.git</a></p>
+</blockquote>
+<h2 id="六、利用漏洞开启telnet"><a href="#六、利用漏洞开启telnet" class="headerlink" title="六、利用漏洞开启telnet"></a>六、利用漏洞开启telnet</h2><blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cd OpenWRTInvasion</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pip3 install -r requirements.txt</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;python3 remote_command_execution_vulnerability.py</p>
+</blockquote>
+<p>&nbsp; &nbsp;输入完之后系统会提示你输入路由器的ip 默认是192.168.31.1<br>回车之后会让你输入stok。这个stok就在上面我说的不让你关闭的小米路由器的管理页面。</p>
+<p>&nbsp; &nbsp;你地址栏显示的应该是 <strong><a target="_blank" rel="noopener" href="http://192.168.31.1/cgi-bin/luci/;stok=xxxxxxxxxx/web/home#router">http://192.168.31.1/cgi-bin/luci/;stok=xxxxxxxxxx/web/home#router</a></strong></p>
+<p>&nbsp; &nbsp;在地址栏复制stok，粘贴在ubuntu里面 然后回车。</p>
+<p>&nbsp; &nbsp;自动利用漏洞开启telnet，当显示<strong>telnet 192.168.31.1</strong>的时候一般来说就是成功了</p>
+<h2 id="七、telnet连接路由器，先备份eeprom-非常重要）"><a href="#七、telnet连接路由器，先备份eeprom-非常重要）" class="headerlink" title="七、telnet连接路由器，先备份eeprom(非常重要）"></a>七、telnet连接路由器，<strong>先备份eeprom(非常重要）</strong></h2><p>&nbsp; &nbsp;这时候在linux里面输入</p>
+<blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;telnet 192.168.31.1</p>
+</blockquote>
+<p>&nbsp; &nbsp;提示你输入用户名此时输入 root 密码为 空 直接回车</p>
+<p>&nbsp; &nbsp;然后备份eeprom</p>
+<blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dd if=/dev/mtd3 of=/tmp/eeprom.bin</p>
+</blockquote>
+<h2 id="八、获取breed"><a href="#八、获取breed" class="headerlink" title="八、获取breed"></a>八、获取breed</h2><p>&nbsp; &nbsp;小米4A千兆版 :</p>
+<blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cd /tmp &amp;&amp; wget  –no-check-certificate <a target="_blank" rel="noopener" href="https://breed.hackpascal.net/breed-mt7621-pbr-m1.bin">https://breed.hackpascal.net/breed-mt7621-pbr-m1.bin</a> &amp;&amp; mv breed-mt7621-pbr-m1.bin breed.bin</p>
+</blockquote>
+<h2 id="九、将备份的eeprom保存到本地"><a href="#九、将备份的eeprom保存到本地" class="headerlink" title="九、将备份的eeprom保存到本地"></a>九、将备份的eeprom保存到本地</h2><p>&nbsp; &nbsp;下载winscp，可以在这里下载</p>
+<p>&nbsp; &nbsp; <a target="_blank" rel="noopener" href="https://pc.qq.com/detail/11/detail_2331.html">https://pc.qq.com/detail/11/detail_2331.html</a></p>
+<p>&nbsp; &nbsp;安装好之后，参照下图连接路由器</p>
+<img src="/2021/02/02/%E6%89%93%E7%A0%B4%E6%9E%B7%E9%94%81/winscp.png" width="50%" height="50%">
+
+<p>&nbsp; &nbsp;登陆后，右边找到tmp文件夹，点进去下载eeprom.bin到本地。<strong>（非常重要）</strong></p>
+<h2 id="十、刷breed"><a href="#十、刷breed" class="headerlink" title="十、刷breed"></a>十、刷breed</h2><blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mtd write breed.bin Bootloader</p>
+</blockquote>
+<p>这一步请耐心等待，10分钟左右输入192.168.1.1即可访问</p>
+<img src="/2021/02/02/%E6%89%93%E7%A0%B4%E6%9E%B7%E9%94%81/breed后台.png" width="50%" height="50%">
+
+
+<p>&nbsp; &nbsp;要是无法打开，看看电脑的ip地址是不是自动获取，一般改为自动获取即可访问，否则可能就砖了</p>
+<h2 id="十一、刷固件"><a href="#十一、刷固件" class="headerlink" title="十一、刷固件"></a>十一、刷固件</h2><h3 id="1-先访问固件备份，两个选项都备份下，EEPROM、编程器固件-都需要备份一下，以免变砖；以防万一前往-MAC地址修改-截图所有MAC地址，前往固件更新添加备份的EEPEOM"><a href="#1-先访问固件备份，两个选项都备份下，EEPROM、编程器固件-都需要备份一下，以免变砖；以防万一前往-MAC地址修改-截图所有MAC地址，前往固件更新添加备份的EEPEOM" class="headerlink" title="1. 先访问固件备份，两个选项都备份下，EEPROM、编程器固件  都需要备份一下，以免变砖；以防万一前往 MAC地址修改 截图所有MAC地址，前往固件更新添加备份的EEPEOM"></a>1. 先访问固件备份，两个选项都备份下，EEPROM、编程器固件  都需要备份一下，以免变砖；以防万一前往 MAC地址修改 截图所有MAC地址，前往固件更新添加备份的EEPEOM</h3><h3 id="2-获取padavan固件"><a href="#2-获取padavan固件" class="headerlink" title="2. 获取padavan固件"></a>2. 获取padavan固件</h3><blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" rel="noopener" href="https://opt.cn2qq.com/padavan/MT7621_7603_7612_128M_3.4.3.9-099.trx">https://opt.cn2qq.com/padavan/MT7621_7603_7612_128M_3.4.3.9-099.trx</a></p>
+</blockquote>
+<p>&nbsp;&nbsp;在固件更新处，添加备份的EEPEOM和Padavan固件，确认无误后点击更新即可</p>
+<img src="/2021/02/02/%E6%89%93%E7%A0%B4%E6%9E%B7%E9%94%81/breed后台2.png" width="50%" height="50%">
+
+<img src="/2021/02/02/%E6%89%93%E7%A0%B4%E6%9E%B7%E9%94%81/breed后台3.png" width="50%" height="50%">
+
+<p>&nbsp;&nbsp;正常情况下进度条到头，即更新结束，保险起见可再等10分钟，然后重启路由器进入padavan后台</p>
+<p>&nbsp;&nbsp;管理页面：<a target="_blank" rel="noopener" href="http://my.router/">http://my.router/</a> 或 <a target="_blank" rel="noopener" href="http://192.168.123.1/">http://192.168.123.1/</a></p>
+<p>&nbsp;&nbsp;管理账号：admin</p>
+<p>&nbsp;&nbsp;密码：admin</p>
+<p>&nbsp;&nbsp;wifi密码:1234567890</p>
+<img src="/2021/02/02/%E6%89%93%E7%A0%B4%E6%9E%B7%E9%94%81/padavan后台.jpg" width="50%" height="50%">
+
+<p>&nbsp;&nbsp;至此我们的路由器就调教好啦</p>
+<p>参考：</p>
+<p><a target="_blank" rel="noopener" href="https://www.right.com.cn/forum/thread-4017759-1-1.html">https://www.right.com.cn/forum/thread-4017759-1-1.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.right.com.cn/forum/thread-4007071-1-1.html">https://www.right.com.cn/forum/thread-4007071-1-1.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://baijiahao.baidu.com/s?id=1617521089016026487&amp;wfr=spider&amp;for=pc&amp;searchword=padavan">https://baijiahao.baidu.com/s?id=1617521089016026487&amp;wfr=spider&amp;for=pc&amp;searchword=padavan</a></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/02/02/%E5%BC%80%E5%A7%8B%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B9%8B%E6%97%85/" rel="prev" title="开始我的博客之旅">
+                  <i class="fa fa-chevron-left"></i> 开始我的博客之旅
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2021/02/02/%E5%92%8C%E6%88%91%E7%AD%BE%E8%AE%A2%E5%A5%91%E7%BA%A6%E6%88%90%E4%B8%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%90%A7%EF%BC%81/" rel="next" title="和我签订契约成为魔法少女吧！">
+                  和我签订契约成为魔法少女吧！ <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小炒面</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@next-theme/pjax@0.4.0/pjax.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '.page-configurations',
+    '.main-inner',
+    '.post-toc-wrap',
+    '.languages',
+    '.pjax'
+  ],
+  analytics: false,
+  cacheBust: false,
+  scrollRestoration: false,
+  scrollTo: !CONFIG.bookmark.enable
+});
+
+document.addEventListener('pjax:success', () => {
+  pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  const hasTOC = document.querySelector('.post-toc');
+  document.querySelector('.sidebar-inner').classList.toggle('sidebar-nav-active', hasTOC);
+  document.querySelector(hasTOC ? '.sidebar-nav-toc' : '.sidebar-nav-overview').click();
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+    <div class="pjax">
+
+
+    </div>
+</body>
+</html>
