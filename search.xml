@@ -1,6 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>和我签订契约成为魔法少女吧！</title>
+    <url>/2021/02/02/%E5%92%8C%E6%88%91%E7%AD%BE%E8%AE%A2%E5%A5%91%E7%BA%A6%E6%88%90%E4%B8%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%90%A7%EF%BC%81/</url>
+    <content><![CDATA[<h3 id="上一篇咱们已经完成了路由器的配置，现在就可以着手学习魔法"><a href="#上一篇咱们已经完成了路由器的配置，现在就可以着手学习魔法" class="headerlink" title="上一篇咱们已经完成了路由器的配置，现在就可以着手学习魔法"></a>上一篇咱们已经完成了路由器的配置，现在就可以着手学习魔法</h3><ul>
+<li><h4 id="由于padavan自带了魔法插件，我们只需运行即可"><a href="#由于padavan自带了魔法插件，我们只需运行即可" class="headerlink" title="由于padavan自带了魔法插件，我们只需运行即可"></a>由于padavan自带了魔法插件，我们只需运行即可</h4></li>
+</ul>
+<p>&nbsp; &nbsp;<em>可能是小米路由器的问题，建议使用ss_tproxy分流</em></p>
+<img src="/2021/02/02/%E5%92%8C%E6%88%91%E7%AD%BE%E8%AE%A2%E5%A5%91%E7%BA%A6%E6%88%90%E4%B8%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%90%A7%EF%BC%81/1.png" width="60%" height="60%">
+
+
+<ul>
+<li><h4 id="但是由于网络问题可能无法成功下载魔法道具"><a href="#但是由于网络问题可能无法成功下载魔法道具" class="headerlink" title="但是由于网络问题可能无法成功下载魔法道具"></a>但是由于网络问题可能无法成功下载魔法道具</h4></li>
+</ul>
+<img src="/2021/02/02/%E5%92%8C%E6%88%91%E7%AD%BE%E8%AE%A2%E5%A5%91%E7%BA%A6%E6%88%90%E4%B8%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%90%A7%EF%BC%81/2.png" width="70%" height="70%">
+
+<p>这时就需要提前下载好</p>
+<blockquote>
+<p><a href="https://raw.githubusercontent.com/hiboyhiboy/opt-file/master/v2ray">https://raw.githubusercontent.com/hiboyhiboy/opt-file/master/v2ray</a></p>
+</blockquote>
+<p>&nbsp; &nbsp;然后用上一篇提到的<strong>winscp</strong>工具连接到路由器，并将下载好的文件放到路由器的 <u>/opt/bin/</u> 路径下，然后重启魔法服务，</p>
+<ul>
+<li><h4 id="当提示如下内容时，咱们就成为魔法少女啦"><a href="#当提示如下内容时，咱们就成为魔法少女啦" class="headerlink" title="当提示如下内容时，咱们就成为魔法少女啦"></a>当提示如下内容时，咱们就成为魔法少女啦</h4></li>
+</ul>
+<img src="/2021/02/02/%E5%92%8C%E6%88%91%E7%AD%BE%E8%AE%A2%E5%A5%91%E7%BA%A6%E6%88%90%E4%B8%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%90%A7%EF%BC%81/3.png" width="60%" height="60%">
+
+
+
+
+
+]]></content>
+      <tags>
+        <tag>路由器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo的配置相关说明</title>
+    <url>/2021/02/07/hexo%E7%9A%84%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3%E8%AF%B4%E6%98%8E/</url>
+    <content><![CDATA[<p>在上一篇中我们的博客已经部署完成了，那么该如何进行配置呢</p>
+<a id="more"></a>
+
+<hr>
+<p>首先弄清两个概念</p>
+<blockquote>
+<p>站点配置文件：指的是你的博客根目录下的_config.yml文件</p>
+</blockquote>
+<blockquote>
+<p>主题配置文件：指的是博客根目录下themes文件夹内，你下载的主题文件夹下的_config.yml文件</p>
+</blockquote>
+<hr>
+<h2 id="一、图片问题"><a href="#一、图片问题" class="headerlink" title="一、图片问题"></a>一、图片问题</h2><h3 id="1-管理好图片"><a href="#1-管理好图片" class="headerlink" title="1.管理好图片"></a>1.管理好图片</h3><p>可以使用图片托管，我喜欢保存在本地，使用如下方法</p>
+<p>打开站点配置文件，找到post_asset_folder将其改为true</p>
+<pre><code># Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: &#39;&#39;
+filename_case: 0
+nder_drafts: false
+post_asset_folder: true  #改这里
+</code></pre>
+<p>然后Git Bash进入该目录，执行</p>
+<pre><code>npm install hexo-asset-image --save
+</code></pre>
+<p>如果不行则执行</p>
+<pre><code>npm install -g cnpm --registry=https://registry.npm.taobao.org
+</code></pre>
+<p>然后执行</p>
+<pre><code>cnpm install hexo-asset-image --save
+</code></pre>
+<p>此时执行hexo new “xxx”会同时在_post文件夹下生成同名文件夹，文件夹里放图片</p>
+<p>如果上传后网页查看图片仍有问题，可以重新安装。使用此命令</p>
+<pre><code>npm install https://github.com/CodeFalling/hexo-asset-image --save
+</code></pre>
+<p>不行就用</p>
+<pre><code>cnpm install https://github.com/CodeFalling/hexo-asset-image --save
+</code></pre>
+<h2 id="二、修改主题"><a href="#二、修改主题" class="headerlink" title="二、修改主题"></a>二、修改主题</h2><h3 id="1-安装主题"><a href="#1-安装主题" class="headerlink" title="1.安装主题"></a>1.安装主题</h3><p>可以在 <a href="https://hexo.io/themes/">https://hexo.io/themes/</a> 查找自己喜欢的主题</p>
+<p>个人觉得新手用 <strong><a href="https://github.com/iissnan/hexo-theme-next/releases">Next</a></strong> 比较好，官方教程比较详细，这里放出官方教程</p>
+<blockquote>
+<p><a href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
+<p><a href="https://theme-next.iissnan.com/getting-started.html">https://theme-next.iissnan.com/getting-started.html</a></p>
+</blockquote>
+<p>在你的blog文件下的themes文件夹里，使用git bash </p>
+<pre><code>git clone https://github.com/iissnan/hexo-theme-next themes/next
+</code></pre>
+<h3 id="2-启用主题"><a href="#2-启用主题" class="headerlink" title="2.启用主题"></a>2.启用主题</h3><p>打开站点配置文件，找到theme字段，并将其值更改为 next</p>
+<h3 id="3-背景动画设置"><a href="#3-背景动画设置" class="headerlink" title="3.背景动画设置"></a>3.背景动画设置</h3><p>我喜欢这个动画</p>
+<img src="/2021/02/07/hexo%E7%9A%84%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3%E8%AF%B4%E6%98%8E/1.png" width="100%" height="100%">
+
+<p>（1）打开Git进入自己文件夹/themes/next文件夹下</p>
+<p>（2）运行命令</p>
+<pre><code>git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canvas-nest
+</code></pre>
+<p>（2）详情可见 <a href="https://github.com/theme-next/theme-next-canvas-nest">Hexo Next背景动画Canvas_nest</a> 官方文件进行配置</p>
+<p>首先在你的博客根目录下找到source文件夹</p>
+<p>然后进入_date文件夹内（没有该文件夹就新建一个）</p>
+<p>新建一个footer.swig文件，并编辑此文件添加以下内容</p>
+<pre><code>&lt;script color=&quot;0,0,255&quot; opacity=&quot;0.5&quot; zIndex=&quot;-1&quot; count=&quot;99&quot; src=&quot;https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>自行修改参数，可以对动画自定义</p>
+<p>（3）进入主题配置文件，取消footer行的注释</p>
+<pre><code># Define custom file paths.
+# Create your custom files in site directory `source/_data` and uncomment needed files below.
+custom_file_path:
+  #head: source/_data/head.swig
+  #header: source/_data/header.swig
+  #sidebar: source/_data/sidebar.swig
+  #postMeta: source/_data/post-meta.swig
+  #postBodyEnd: source/_data/post-body-end.swig
+  footer: source/_data/footer.swig     #我在这里
+  #bodyEnd: source/_data/body-end.swig
+  #variable: source/_data/variables.styl
+  #mixin: source/_data/mixins.styl
+  #style: source/_data/styles.styl
+</code></pre>
+<p>成功部署网页后就有动画啦</p>
+<h3 id="三、设置hexo首页只显示部分摘要"><a href="#三、设置hexo首页只显示部分摘要" class="headerlink" title="三、设置hexo首页只显示部分摘要"></a>三、设置hexo首页只显示部分摘要</h3>]]></content>
+  </entry>
+  <entry>
     <title>如何搭建个人博客</title>
     <url>/2021/02/07/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p>&nbsp; &nbsp;不喜欢广告，不喜欢某些网站设置的登录才能查看内容，于是决定自己搭建博客，本文使用hexo+github的方法使用个人电脑进行搭建</p>
@@ -99,40 +220,6 @@ hexo d
 </code></pre>
 <hr>
 ]]></content>
-  </entry>
-  <entry>
-    <title>和我签订契约成为魔法少女吧！</title>
-    <url>/2021/02/02/%E5%92%8C%E6%88%91%E7%AD%BE%E8%AE%A2%E5%A5%91%E7%BA%A6%E6%88%90%E4%B8%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%90%A7%EF%BC%81/</url>
-    <content><![CDATA[<h2 id="上一篇咱们已经完成了路由器的配置，现在就可以着手学习魔法"><a href="#上一篇咱们已经完成了路由器的配置，现在就可以着手学习魔法" class="headerlink" title="上一篇咱们已经完成了路由器的配置，现在就可以着手学习魔法"></a>上一篇咱们已经完成了路由器的配置，现在就可以着手学习魔法</h2><ul>
-<li><h4 id="由于padavan自带了魔法插件，我们只需运行即可"><a href="#由于padavan自带了魔法插件，我们只需运行即可" class="headerlink" title="由于padavan自带了魔法插件，我们只需运行即可"></a>由于padavan自带了魔法插件，我们只需运行即可</h4></li>
-</ul>
-<p>&nbsp; &nbsp;<em>可能是小米路由器的问题，建议使用ss_tproxy分流</em></p>
-<img src="/2021/02/02/%E5%92%8C%E6%88%91%E7%AD%BE%E8%AE%A2%E5%A5%91%E7%BA%A6%E6%88%90%E4%B8%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%90%A7%EF%BC%81/1.png" width="60%" height="60%">
-
-
-<ul>
-<li><h4 id="但是由于网络问题可能无法成功下载魔法道具"><a href="#但是由于网络问题可能无法成功下载魔法道具" class="headerlink" title="但是由于网络问题可能无法成功下载魔法道具"></a>但是由于网络问题可能无法成功下载魔法道具</h4></li>
-</ul>
-<img src="/2021/02/02/%E5%92%8C%E6%88%91%E7%AD%BE%E8%AE%A2%E5%A5%91%E7%BA%A6%E6%88%90%E4%B8%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%90%A7%EF%BC%81/2.png" width="70%" height="70%">
-
-<p>这时就需要提前下载好</p>
-<blockquote>
-<p><a href="https://raw.githubusercontent.com/hiboyhiboy/opt-file/master/v2ray">https://raw.githubusercontent.com/hiboyhiboy/opt-file/master/v2ray</a></p>
-</blockquote>
-<p>&nbsp; &nbsp;然后用上一篇提到的<strong>winscp</strong>工具连接到路由器，并将下载好的文件放到路由器的 <u>/opt/bin/</u> 路径下，然后重启魔法服务，</p>
-<ul>
-<li><h4 id="当提示如下内容时，咱们就成为魔法少女啦"><a href="#当提示如下内容时，咱们就成为魔法少女啦" class="headerlink" title="当提示如下内容时，咱们就成为魔法少女啦"></a>当提示如下内容时，咱们就成为魔法少女啦</h4></li>
-</ul>
-<img src="/2021/02/02/%E5%92%8C%E6%88%91%E7%AD%BE%E8%AE%A2%E5%A5%91%E7%BA%A6%E6%88%90%E4%B8%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%90%A7%EF%BC%81/3.png" width="60%" height="60%">
-
-
-
-
-
-]]></content>
-      <tags>
-        <tag>路由器</tag>
-      </tags>
   </entry>
   <entry>
     <title>开始我的博客之旅</title>

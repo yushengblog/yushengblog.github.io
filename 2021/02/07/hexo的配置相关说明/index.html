@@ -24,30 +24,34 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"manual"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="吾之生前，万籁俱寂吾之身后，了无生机">
-<meta property="og:type" content="website">
-<meta property="og:title" content="斯是陋室惟吾德馨">
-<meta property="og:url" content="http://example.com/index.html">
+<meta name="description" content="在上一篇中我们的博客已经部署完成了，那么该如何进行配置呢">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo的配置相关说明">
+<meta property="og:url" content="http://example.com/2021/02/07/hexo%E7%9A%84%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3%E8%AF%B4%E6%98%8E/index.html">
 <meta property="og:site_name" content="斯是陋室惟吾德馨">
-<meta property="og:description" content="吾之生前，万籁俱寂吾之身后，了无生机">
+<meta property="og:description" content="在上一篇中我们的博客已经部署完成了，那么该如何进行配置呢">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2021/02/07/hexo%E7%9A%84%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3%E8%AF%B4%E6%98%8E/1.png">
+<meta property="article:published_time" content="2021-02-07T07:51:29.000Z">
+<meta property="article:modified_time" content="2021-02-07T16:26:31.707Z">
 <meta property="article:author" content="小炒面">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2021/02/07/hexo%E7%9A%84%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3%E8%AF%B4%E6%98%8E/1.png">
 
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2021/02/07/hexo%E7%9A%84%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3%E8%AF%B4%E6%98%8E/">
 
 
 <script data-pjax class="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
-<title>斯是陋室惟吾德馨</title>
+<title>hexo的配置相关说明 | 斯是陋室惟吾德馨</title>
   
 
   <script data-pjax>
@@ -178,7 +182,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -191,6 +195,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%9B%BE%E7%89%87%E9%97%AE%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">一、图片问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E7%AE%A1%E7%90%86%E5%A5%BD%E5%9B%BE%E7%89%87"><span class="nav-number">1.1.</span> <span class="nav-text">1.管理好图片</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">二、修改主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98"><span class="nav-number">2.1.</span> <span class="nav-text">1.安装主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%90%AF%E7%94%A8%E4%B8%BB%E9%A2%98"><span class="nav-number">2.2.</span> <span class="nav-text">2.启用主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E8%83%8C%E6%99%AF%E5%8A%A8%E7%94%BB%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.3.</span> <span class="nav-text">3.背景动画设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E8%AE%BE%E7%BD%AEhexo%E9%A6%96%E9%A1%B5%E5%8F%AA%E6%98%BE%E7%A4%BA%E9%83%A8%E5%88%86%E6%91%98%E8%A6%81"><span class="nav-number">2.4.</span> <span class="nav-text">三、设置hexo首页只显示部分摘要</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -247,16 +252,17 @@
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/07/hexo%E7%9A%84%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3%E8%AF%B4%E6%98%8E/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -269,9 +275,9 @@
       <meta itemprop="name" content="斯是陋室惟吾德馨">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/02/07/hexo%E7%9A%84%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3%E8%AF%B4%E6%98%8E/" class="post-title-link" itemprop="url">hexo的配置相关说明</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          hexo的配置相关说明
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -317,16 +323,89 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>在上一篇中我们的博客已经部署完成了，那么该如何进行配置呢</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/02/07/hexo%E7%9A%84%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3%E8%AF%B4%E6%98%8E/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+        <p>在上一篇中我们的博客已经部署完成了，那么该如何进行配置呢</p>
+<a id="more"></a>
+
+<hr>
+<p>首先弄清两个概念</p>
+<blockquote>
+<p>站点配置文件：指的是你的博客根目录下的_config.yml文件</p>
+</blockquote>
+<blockquote>
+<p>主题配置文件：指的是博客根目录下themes文件夹内，你下载的主题文件夹下的_config.yml文件</p>
+</blockquote>
+<hr>
+<h2 id="一、图片问题"><a href="#一、图片问题" class="headerlink" title="一、图片问题"></a>一、图片问题</h2><h3 id="1-管理好图片"><a href="#1-管理好图片" class="headerlink" title="1.管理好图片"></a>1.管理好图片</h3><p>可以使用图片托管，我喜欢保存在本地，使用如下方法</p>
+<p>打开站点配置文件，找到post_asset_folder将其改为true</p>
+<pre><code># Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: &#39;&#39;
+filename_case: 0
+nder_drafts: false
+post_asset_folder: true  #改这里
+</code></pre>
+<p>然后Git Bash进入该目录，执行</p>
+<pre><code>npm install hexo-asset-image --save
+</code></pre>
+<p>如果不行则执行</p>
+<pre><code>npm install -g cnpm --registry=https://registry.npm.taobao.org
+</code></pre>
+<p>然后执行</p>
+<pre><code>cnpm install hexo-asset-image --save
+</code></pre>
+<p>此时执行hexo new “xxx”会同时在_post文件夹下生成同名文件夹，文件夹里放图片</p>
+<p>如果上传后网页查看图片仍有问题，可以重新安装。使用此命令</p>
+<pre><code>npm install https://github.com/CodeFalling/hexo-asset-image --save
+</code></pre>
+<p>不行就用</p>
+<pre><code>cnpm install https://github.com/CodeFalling/hexo-asset-image --save
+</code></pre>
+<h2 id="二、修改主题"><a href="#二、修改主题" class="headerlink" title="二、修改主题"></a>二、修改主题</h2><h3 id="1-安装主题"><a href="#1-安装主题" class="headerlink" title="1.安装主题"></a>1.安装主题</h3><p>可以在 <a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a> 查找自己喜欢的主题</p>
+<p>个人觉得新手用 <strong><a target="_blank" rel="noopener" href="https://github.com/iissnan/hexo-theme-next/releases">Next</a></strong> 比较好，官方教程比较详细，这里放出官方教程</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
+<p><a target="_blank" rel="noopener" href="https://theme-next.iissnan.com/getting-started.html">https://theme-next.iissnan.com/getting-started.html</a></p>
+</blockquote>
+<p>在你的blog文件下的themes文件夹里，使用git bash </p>
+<pre><code>git clone https://github.com/iissnan/hexo-theme-next themes/next
+</code></pre>
+<h3 id="2-启用主题"><a href="#2-启用主题" class="headerlink" title="2.启用主题"></a>2.启用主题</h3><p>打开站点配置文件，找到theme字段，并将其值更改为 next</p>
+<h3 id="3-背景动画设置"><a href="#3-背景动画设置" class="headerlink" title="3.背景动画设置"></a>3.背景动画设置</h3><p>我喜欢这个动画</p>
+<img src="/2021/02/07/hexo%E7%9A%84%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3%E8%AF%B4%E6%98%8E/1.png" width="100%" height="100%">
+
+<p>（1）打开Git进入自己文件夹/themes/next文件夹下</p>
+<p>（2）运行命令</p>
+<pre><code>git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canvas-nest
+</code></pre>
+<p>（2）详情可见 <a target="_blank" rel="noopener" href="https://github.com/theme-next/theme-next-canvas-nest">Hexo Next背景动画Canvas_nest</a> 官方文件进行配置</p>
+<p>首先在你的博客根目录下找到source文件夹</p>
+<p>然后进入_date文件夹内（没有该文件夹就新建一个）</p>
+<p>新建一个footer.swig文件，并编辑此文件添加以下内容</p>
+<pre><code>&lt;script color=&quot;0,0,255&quot; opacity=&quot;0.5&quot; zIndex=&quot;-1&quot; count=&quot;99&quot; src=&quot;https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>自行修改参数，可以对动画自定义</p>
+<p>（3）进入主题配置文件，取消footer行的注释</p>
+<pre><code># Define custom file paths.
+# Create your custom files in site directory `source/_data` and uncomment needed files below.
+custom_file_path:
+  #head: source/_data/head.swig
+  #header: source/_data/header.swig
+  #sidebar: source/_data/sidebar.swig
+  #postMeta: source/_data/post-meta.swig
+  #postBodyEnd: source/_data/post-body-end.swig
+  footer: source/_data/footer.swig     #我在这里
+  #bodyEnd: source/_data/body-end.swig
+  #variable: source/_data/variables.styl
+  #mixin: source/_data/mixins.styl
+  #style: source/_data/styles.styl
+</code></pre>
+<p>成功部署网页后就有动画啦</p>
+<h3 id="三、设置hexo首页只显示部分摘要"><a href="#三、设置hexo首页只显示部分摘要" class="headerlink" title="三、设置hexo首页只显示部分摘要"></a>三、设置hexo首页只显示部分摘要</h3>
     </div>
 
     
@@ -334,379 +413,36 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/07/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/uploads/%E7%B2%BE%E7%A5%9E%E5%B0%8F%E5%A6%B9.jpg">
-      <meta itemprop="name" content="小炒面">
-      <meta itemprop="description" content="吾之生前，万籁俱寂<br>吾之身后，了无生机">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="斯是陋室惟吾德馨">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/02/07/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">如何搭建个人博客</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2021-02-07 13:42:33 / 修改时间：15:38:29" itemprop="dateCreated datePublished" datetime="2021-02-07T13:42:33+08:00">2021-02-07</time>
-    </span>
-
-  
+          <div class="reward-container">
+  <div>你能请我吃糖吗</div>
+  <button onclick="document.querySelector('.post-reward').classList.toggle('active');">
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.png" alt="小炒面 微信">
+        <span>微信</span>
       </div>
-      <div class="post-meta">
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>2k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>2 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>正经人谁写博客啊</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/02/07/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/02/%E5%92%8C%E6%88%91%E7%AD%BE%E8%AE%A2%E5%A5%91%E7%BA%A6%E6%88%90%E4%B8%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%90%A7%EF%BC%81/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/uploads/%E7%B2%BE%E7%A5%9E%E5%B0%8F%E5%A6%B9.jpg">
-      <meta itemprop="name" content="小炒面">
-      <meta itemprop="description" content="吾之生前，万籁俱寂<br>吾之身后，了无生机">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="斯是陋室惟吾德馨">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/02/02/%E5%92%8C%E6%88%91%E7%AD%BE%E8%AE%A2%E5%A5%91%E7%BA%A6%E6%88%90%E4%B8%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%90%A7%EF%BC%81/" class="post-title-link" itemprop="url">和我签订契约成为魔法少女吧！</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-02-02 23:52:43" itemprop="dateCreated datePublished" datetime="2021-02-02T23:52:43+08:00">2021-02-02</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-02-07 20:12:21" itemprop="dateModified" datetime="2021-02-07T20:12:21+08:00">2021-02-07</time>
-      </span>
-
-  
+      <div>
+        <img src="/images/alipay.png" alt="小炒面 支付宝">
+        <span>支付宝</span>
       </div>
-      <div class="post-meta">
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>279</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
+
+  </div>
 </div>
 
-        </div>
-      </header>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>你也想学魔法吗</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/02/02/%E5%92%8C%E6%88%91%E7%AD%BE%E8%AE%A2%E5%A5%91%E7%BA%A6%E6%88%90%E4%B8%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%90%A7%EF%BC%81/">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/02/%E6%89%93%E7%A0%B4%E6%9E%B7%E9%94%81/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/uploads/%E7%B2%BE%E7%A5%9E%E5%B0%8F%E5%A6%B9.jpg">
-      <meta itemprop="name" content="小炒面">
-      <meta itemprop="description" content="吾之生前，万籁俱寂<br>吾之身后，了无生机">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="斯是陋室惟吾德馨">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/02/02/%E6%89%93%E7%A0%B4%E6%9E%B7%E9%94%81/" class="post-title-link" itemprop="url">打破枷锁</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-02-02 21:23:47" itemprop="dateCreated datePublished" datetime="2021-02-02T21:23:47+08:00">2021-02-02</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-02-05 01:48:41" itemprop="dateModified" datetime="2021-02-05T01:48:41+08:00">2021-02-05</time>
-      </span>
-
-  
-      </div>
-      <div class="post-meta">
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>3.7k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>3 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>一切的开始...</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/02/02/%E6%89%93%E7%A0%B4%E6%9E%B7%E9%94%81/">
-                阅读全文 &raquo;
-              </a>
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/02/07/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="prev" title="如何搭建个人博客">
+                  <i class="fa fa-chevron-left"></i> 如何搭建个人博客
+                </a>
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/02/%E5%BC%80%E5%A7%8B%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B9%8B%E6%97%85/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/uploads/%E7%B2%BE%E7%A5%9E%E5%B0%8F%E5%A6%B9.jpg">
-      <meta itemprop="name" content="小炒面">
-      <meta itemprop="description" content="吾之生前，万籁俱寂<br>吾之身后，了无生机">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="斯是陋室惟吾德馨">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/02/02/%E5%BC%80%E5%A7%8B%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B9%8B%E6%97%85/" class="post-title-link" itemprop="url">开始我的博客之旅</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-02-02 11:09:08" itemprop="dateCreated datePublished" datetime="2021-02-02T11:09:08+08:00">2021-02-02</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-02-05 01:45:12" itemprop="dateModified" datetime="2021-02-05T01:45:12+08:00">2021-02-05</time>
-      </span>
-
-  
-      </div>
-      <div class="post-meta">
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>50</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="新的篇章"><a href="#新的篇章" class="headerlink" title="新的篇章"></a>新的篇章</h1><p>经过一晚的奋战，我的第一篇博客发表啦，后续会更新记录我的博客搭建方法</p>
-<p><del>希望能坚持写下去</del></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/02/02/%E5%BC%80%E5%A7%8B%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B9%8B%E6%97%85/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
+            <div class="post-nav-item">
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          </div>
     </footer>
   </article>
 </div>
@@ -715,6 +451,8 @@
 
 
 
+
+    <div class="comments" id="lv-container" data-id="city" data-uid="MTAyMC81MjY3NC8yOTE1MQ=="></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -849,6 +587,21 @@ document.addEventListener('pjax:success', () => {
     <div class="pjax">
 
 
+<script>
+NexT.utils.loadComments('#lv-container', () => {
+  window.livereOptions = {
+    refer: "2021/02/07/hexo的配置相关说明/"
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+});
+</script>
 
     </div>
 </body>
