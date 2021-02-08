@@ -65,7 +65,7 @@ post_asset_folder: true  #改这里
 <p>（2）详情可见 <a href="https://github.com/theme-next/theme-next-canvas-nest">Hexo Next背景动画Canvas_nest</a> 官方文件进行配置</p>
 <p>首先在你的博客根目录下找到source文件夹</p>
 <p>然后进入_data文件夹内（没有该文件夹就新建一个）</p>
-<p>新建一个footer.swig文件，并编辑此文件添加以下内容</p>
+<p>新建一个footer.njk文件，并编辑此文件添加以下内容</p>
 <pre><code>&lt;script color=&quot;0,0,255&quot; opacity=&quot;0.5&quot; zIndex=&quot;-1&quot; count=&quot;99&quot; src=&quot;https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js&quot;&gt;&lt;/script&gt;
 </code></pre>
 <p>自行修改参数，可以对动画自定义</p>
@@ -73,13 +73,13 @@ post_asset_folder: true  #改这里
 <pre><code># Define custom file paths.
 # Create your custom files in site directory `source/_data` and uncomment needed files below.
 custom_file_path:
-  #head: source/_data/head.swig
-  #header: source/_data/header.swig
-  #sidebar: source/_data/sidebar.swig
-  #postMeta: source/_data/post-meta.swig
-  #postBodyEnd: source/_data/post-body-end.swig
-  footer: source/_data/footer.swig     #我在这里
-  #bodyEnd: source/_data/body-end.swig
+  #head: source/_data/head.njk
+  #header: source/_data/header.njk
+  #sidebar: source/_data/sidebar.njk
+  #postMeta: source/_data/post-meta.njk
+  #postBodyEnd: source/_data/post-body-end.njk
+  footer: source/_data/footer.njk     #我在这里
+  #bodyEnd: source/_data/body-end.njk
   #variable: source/_data/variables.styl
   #mixin: source/_data/mixins.styl
   #style: source/_data/styles.styl
@@ -105,40 +105,6 @@ description: 这是显示在首页的概述，正文内容均会被隐藏。
 ]]></content>
       <tags>
         <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>和我签订契约成为魔法少女吧！</title>
-    <url>/2021/02/02/%E5%92%8C%E6%88%91%E7%AD%BE%E8%AE%A2%E5%A5%91%E7%BA%A6%E6%88%90%E4%B8%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%90%A7%EF%BC%81/</url>
-    <content><![CDATA[<h3 id="上一篇咱们已经完成了路由器的配置，现在就可以着手学习魔法"><a href="#上一篇咱们已经完成了路由器的配置，现在就可以着手学习魔法" class="headerlink" title="上一篇咱们已经完成了路由器的配置，现在就可以着手学习魔法"></a>上一篇咱们已经完成了路由器的配置，现在就可以着手学习魔法</h3><ul>
-<li><h4 id="由于padavan自带了魔法插件，我们只需运行即可"><a href="#由于padavan自带了魔法插件，我们只需运行即可" class="headerlink" title="由于padavan自带了魔法插件，我们只需运行即可"></a>由于padavan自带了魔法插件，我们只需运行即可</h4></li>
-</ul>
-<p>&nbsp; &nbsp;<em>可能是小米路由器的问题，建议使用ss_tproxy分流</em></p>
-<img src="/2021/02/02/%E5%92%8C%E6%88%91%E7%AD%BE%E8%AE%A2%E5%A5%91%E7%BA%A6%E6%88%90%E4%B8%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%90%A7%EF%BC%81/1.png" width="60%" height="60%">
-
-
-<ul>
-<li><h4 id="但是由于网络问题可能无法成功下载魔法道具"><a href="#但是由于网络问题可能无法成功下载魔法道具" class="headerlink" title="但是由于网络问题可能无法成功下载魔法道具"></a>但是由于网络问题可能无法成功下载魔法道具</h4></li>
-</ul>
-<img src="/2021/02/02/%E5%92%8C%E6%88%91%E7%AD%BE%E8%AE%A2%E5%A5%91%E7%BA%A6%E6%88%90%E4%B8%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%90%A7%EF%BC%81/2.png" width="70%" height="70%">
-
-<p>这时就需要提前下载好</p>
-<blockquote>
-<p><a href="https://raw.githubusercontent.com/hiboyhiboy/opt-file/master/v2ray">https://raw.githubusercontent.com/hiboyhiboy/opt-file/master/v2ray</a></p>
-</blockquote>
-<p>&nbsp; &nbsp;然后用上一篇提到的<strong>winscp</strong>工具连接到路由器，并将下载好的文件放到路由器的 <u>/opt/bin/</u> 路径下，然后重启魔法服务，</p>
-<ul>
-<li><h4 id="当提示如下内容时，咱们就成为魔法少女啦"><a href="#当提示如下内容时，咱们就成为魔法少女啦" class="headerlink" title="当提示如下内容时，咱们就成为魔法少女啦"></a>当提示如下内容时，咱们就成为魔法少女啦</h4></li>
-</ul>
-<img src="/2021/02/02/%E5%92%8C%E6%88%91%E7%AD%BE%E8%AE%A2%E5%A5%91%E7%BA%A6%E6%88%90%E4%B8%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%90%A7%EF%BC%81/3.png" width="60%" height="60%">
-
-
-
-
-
-]]></content>
-      <tags>
-        <tag>路由器</tag>
       </tags>
   </entry>
   <entry>
@@ -242,6 +208,40 @@ hexo d
 ]]></content>
       <tags>
         <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>和我签订契约成为魔法少女吧！</title>
+    <url>/2021/02/02/%E5%92%8C%E6%88%91%E7%AD%BE%E8%AE%A2%E5%A5%91%E7%BA%A6%E6%88%90%E4%B8%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%90%A7%EF%BC%81/</url>
+    <content><![CDATA[<h3 id="上一篇咱们已经完成了路由器的配置，现在就可以着手学习魔法"><a href="#上一篇咱们已经完成了路由器的配置，现在就可以着手学习魔法" class="headerlink" title="上一篇咱们已经完成了路由器的配置，现在就可以着手学习魔法"></a>上一篇咱们已经完成了路由器的配置，现在就可以着手学习魔法</h3><ul>
+<li><h4 id="由于padavan自带了魔法插件，我们只需运行即可"><a href="#由于padavan自带了魔法插件，我们只需运行即可" class="headerlink" title="由于padavan自带了魔法插件，我们只需运行即可"></a>由于padavan自带了魔法插件，我们只需运行即可</h4></li>
+</ul>
+<p>&nbsp; &nbsp;<em>可能是小米路由器的问题，建议使用ss_tproxy分流</em></p>
+<img src="/2021/02/02/%E5%92%8C%E6%88%91%E7%AD%BE%E8%AE%A2%E5%A5%91%E7%BA%A6%E6%88%90%E4%B8%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%90%A7%EF%BC%81/1.png" width="60%" height="60%">
+
+
+<ul>
+<li><h4 id="但是由于网络问题可能无法成功下载魔法道具"><a href="#但是由于网络问题可能无法成功下载魔法道具" class="headerlink" title="但是由于网络问题可能无法成功下载魔法道具"></a>但是由于网络问题可能无法成功下载魔法道具</h4></li>
+</ul>
+<img src="/2021/02/02/%E5%92%8C%E6%88%91%E7%AD%BE%E8%AE%A2%E5%A5%91%E7%BA%A6%E6%88%90%E4%B8%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%90%A7%EF%BC%81/2.png" width="70%" height="70%">
+
+<p>这时就需要提前下载好</p>
+<blockquote>
+<p><a href="https://raw.githubusercontent.com/hiboyhiboy/opt-file/master/v2ray">https://raw.githubusercontent.com/hiboyhiboy/opt-file/master/v2ray</a></p>
+</blockquote>
+<p>&nbsp; &nbsp;然后用上一篇提到的<strong>winscp</strong>工具连接到路由器，并将下载好的文件放到路由器的 <u>/opt/bin/</u> 路径下，然后重启魔法服务，</p>
+<ul>
+<li><h4 id="当提示如下内容时，咱们就成为魔法少女啦"><a href="#当提示如下内容时，咱们就成为魔法少女啦" class="headerlink" title="当提示如下内容时，咱们就成为魔法少女啦"></a>当提示如下内容时，咱们就成为魔法少女啦</h4></li>
+</ul>
+<img src="/2021/02/02/%E5%92%8C%E6%88%91%E7%AD%BE%E8%AE%A2%E5%A5%91%E7%BA%A6%E6%88%90%E4%B8%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%90%A7%EF%BC%81/3.png" width="60%" height="60%">
+
+
+
+
+
+]]></content>
+      <tags>
+        <tag>路由器</tag>
       </tags>
   </entry>
   <entry>
