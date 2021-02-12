@@ -25,30 +25,33 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"manual"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="吾之生前，万籁俱寂吾之身后，了无生机">
-<meta property="og:type" content="website">
-<meta property="og:title" content="斯是陋室惟吾德馨">
-<meta property="og:url" content="http://example.com/index.html">
+<meta name="description" content="注释单行注释1&#x2F;&#x2F;这一行就是单行注释,该行都会被注释掉 多行注释1234567&#x2F;**&#x2F;这是多行注释符号&#x2F;*我是多行注释我是多行注释我是多行注释我是多行注释*&#x2F; 文档注释文档注释内书写的某段文字是能被JavaDoc识别的 123456&#x2F;&#x2F; 我是单行注释。   文档注释以&#x2F;**开头，*&#x2F;结尾，如下&#x2F;***@Description HelloWorld*@Author Misaka*......*&#x2F;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JAVA基础">
+<meta property="og:url" content="http://example.com/2021/02/12/JAVA%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="斯是陋室惟吾德馨">
-<meta property="og:description" content="吾之生前，万籁俱寂吾之身后，了无生机">
+<meta property="og:description" content="注释单行注释1&#x2F;&#x2F;这一行就是单行注释,该行都会被注释掉 多行注释1234567&#x2F;**&#x2F;这是多行注释符号&#x2F;*我是多行注释我是多行注释我是多行注释我是多行注释*&#x2F; 文档注释文档注释内书写的某段文字是能被JavaDoc识别的 123456&#x2F;&#x2F; 我是单行注释。   文档注释以&#x2F;**开头，*&#x2F;结尾，如下&#x2F;***@Description HelloWorld*@Author Misaka*......*&#x2F;">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-02-12T14:10:53.000Z">
+<meta property="article:modified_time" content="2021-02-12T18:42:32.425Z">
 <meta property="article:author" content="小炒面">
+<meta property="article:tag" content="JAVA">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2021/02/12/JAVA%E5%9F%BA%E7%A1%80/">
 
 
 <script data-pjax class="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
-<title>斯是陋室惟吾德馨</title>
+<title>JAVA基础 | 斯是陋室惟吾德馨</title>
   
 
   <script data-pjax>
@@ -179,7 +182,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -192,6 +195,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%A8%E9%87%8A"><span class="nav-number">1.</span> <span class="nav-text">注释</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8D%95%E8%A1%8C%E6%B3%A8%E9%87%8A"><span class="nav-number">1.1.</span> <span class="nav-text">单行注释</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%9A%E8%A1%8C%E6%B3%A8%E9%87%8A"><span class="nav-number">1.2.</span> <span class="nav-text">多行注释</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%96%87%E6%A1%A3%E6%B3%A8%E9%87%8A"><span class="nav-number">1.3.</span> <span class="nav-text">文档注释</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%87%E8%AF%86%E7%AC%A6"><span class="nav-number">2.</span> <span class="nav-text">标识符</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E5%AD%97"><span class="nav-number">2.1.</span> <span class="nav-text">关键字</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">3.</span> <span class="nav-text">数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%EF%BC%88primitive-type%EF%BC%89"><span class="nav-number">3.1.</span> <span class="nav-text">基本数据类型（primitive type）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BC%95%E7%94%A8%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%EF%BC%88Reference-Type%EF%BC%89"><span class="nav-number">3.2.</span> <span class="nav-text">引用数据类型（Reference Type）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%89%A9%E5%B1%95"><span class="nav-number">3.3.</span> <span class="nav-text">数据类型扩展</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%95%B4%E6%95%B0%E6%89%A9%E5%B1%95%EF%BC%9A"><span class="nav-number">3.3.1.</span> <span class="nav-text">整数扩展：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0%E6%89%A9%E5%B1%95%EF%BC%9A"><span class="nav-number">3.3.2.</span> <span class="nav-text">浮点数扩展：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E6%89%A9%E5%B1%95"><span class="nav-number">3.3.3.</span> <span class="nav-text">字符扩展</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6"><span class="nav-number">3.3.4.</span> <span class="nav-text">转义字符</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="nav-number">4.</span> <span class="nav-text">类型转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%98%E9%87%8F"><span class="nav-number">5.</span> <span class="nav-text">变量</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -251,16 +255,17 @@
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/12/JAVA%E5%9F%BA%E7%A1%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -273,9 +278,9 @@
       <meta itemprop="name" content="斯是陋室惟吾德馨">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/02/12/JAVA%E5%9F%BA%E7%A1%80/" class="post-title-link" itemprop="url">JAVA基础</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          JAVA基础
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -321,7 +326,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><h4 id="单行注释"><a href="#单行注释" class="headerlink" title="单行注释"></a>单行注释</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//这一行就是单行注释,该行都会被注释掉</span></span><br></pre></td></tr></table></figure>
+        <h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><h4 id="单行注释"><a href="#单行注释" class="headerlink" title="单行注释"></a>单行注释</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//这一行就是单行注释,该行都会被注释掉</span></span><br></pre></td></tr></table></figure>
 <h4 id="多行注释"><a href="#多行注释" class="headerlink" title="多行注释"></a>多行注释</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**/这是多行注释符号</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">我是多行注释</span></span><br><span class="line"><span class="comment">我是多行注释</span></span><br><span class="line"><span class="comment">我是多行注释</span></span><br><span class="line"><span class="comment">我是多行注释</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
 <h4 id="文档注释"><a href="#文档注释" class="headerlink" title="文档注释"></a>文档注释</h4><p>文档注释内书写的某段文字是能被<strong>JavaDoc</strong>识别的</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 我是单行注释。   文档注释以/**开头，*/结尾，如下</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">*<span class="doctag">@Description</span> HelloWorld</span></span><br><span class="line"><span class="comment">*<span class="doctag">@Author</span> Misaka</span></span><br><span class="line"><span class="comment">*......</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
@@ -462,7 +467,6 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">out:</span><br><span class="line"><span class="number">128</span></span><br><span class="line">-<span class="number">128</span><span class="comment">//内存溢出，结果不正确</span></span><br><span class="line"><span class="number">23</span></span><br><span class="line">-<span class="number">45</span></span><br><span class="line"><span class="number">98</span></span><br><span class="line">b</span><br><span class="line">-<span class="number">1474836480</span><span class="comment">//计算时内存溢出了</span></span><br><span class="line">-<span class="number">1474836480</span><span class="comment">//默认是int，转换之前已经存在问题了</span></span><br><span class="line"><span class="number">20000000000</span><span class="comment">//先把一个数转换为long</span></span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3>
-      
     </div>
 
     
@@ -470,479 +474,39 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/07/hexo%E7%9A%84%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3%E8%AF%B4%E6%98%8E/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/uploads/%E7%B2%BE%E7%A5%9E%E5%B0%8F%E5%A6%B9.jpg">
-      <meta itemprop="name" content="小炒面">
-      <meta itemprop="description" content="吾之生前，万籁俱寂<br>吾之身后，了无生机">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="斯是陋室惟吾德馨">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/02/07/hexo%E7%9A%84%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3%E8%AF%B4%E6%98%8E/" class="post-title-link" itemprop="url">hexo的配置相关说明</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-02-07 15:51:29" itemprop="dateCreated datePublished" datetime="2021-02-07T15:51:29+08:00">2021-02-07</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-02-08 19:51:42" itemprop="dateModified" datetime="2021-02-08T19:51:42+08:00">2021-02-08</time>
-      </span>
-
-  
+          <div class="reward-container">
+  <div>你能请我吃糖吗</div>
+  <button onclick="document.querySelector('.post-reward').classList.toggle('active');">
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.png" alt="小炒面 微信">
+        <span>微信</span>
       </div>
-      <div class="post-meta">
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>2.4k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>2 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>在上一篇中我们的博客已经部署完成了，那么该如何进行配置呢</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/02/07/hexo%E7%9A%84%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3%E8%AF%B4%E6%98%8E/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/07/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/uploads/%E7%B2%BE%E7%A5%9E%E5%B0%8F%E5%A6%B9.jpg">
-      <meta itemprop="name" content="小炒面">
-      <meta itemprop="description" content="吾之生前，万籁俱寂<br>吾之身后，了无生机">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="斯是陋室惟吾德馨">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/02/07/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">如何搭建个人博客</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-02-07 13:42:33" itemprop="dateCreated datePublished" datetime="2021-02-07T13:42:33+08:00">2021-02-07</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-02-08 18:51:21" itemprop="dateModified" datetime="2021-02-08T18:51:21+08:00">2021-02-08</time>
-      </span>
-
-  
+      <div>
+        <img src="/images/alipay.png" alt="小炒面 支付宝">
+        <span>支付宝</span>
       </div>
-      <div class="post-meta">
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>2k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>2 分钟</span>
-    </span>
+
+  </div>
 </div>
 
-        </div>
-      </header>
+          <div class="post-tags">
+              <a href="/tags/JAVA/" rel="tag"># JAVA</a>
+          </div>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>正经人谁写博客啊</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/02/07/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/02/%E5%92%8C%E6%88%91%E7%AD%BE%E8%AE%A2%E5%A5%91%E7%BA%A6%E6%88%90%E4%B8%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%90%A7%EF%BC%81/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/uploads/%E7%B2%BE%E7%A5%9E%E5%B0%8F%E5%A6%B9.jpg">
-      <meta itemprop="name" content="小炒面">
-      <meta itemprop="description" content="吾之生前，万籁俱寂<br>吾之身后，了无生机">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="斯是陋室惟吾德馨">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/02/02/%E5%92%8C%E6%88%91%E7%AD%BE%E8%AE%A2%E5%A5%91%E7%BA%A6%E6%88%90%E4%B8%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%90%A7%EF%BC%81/" class="post-title-link" itemprop="url">和我签订契约成为魔法少女吧！</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-02-02 23:52:43" itemprop="dateCreated datePublished" datetime="2021-02-02T23:52:43+08:00">2021-02-02</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-02-07 20:12:21" itemprop="dateModified" datetime="2021-02-07T20:12:21+08:00">2021-02-07</time>
-      </span>
-
-  
-      </div>
-      <div class="post-meta">
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>279</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>你也想学魔法吗</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/02/02/%E5%92%8C%E6%88%91%E7%AD%BE%E8%AE%A2%E5%A5%91%E7%BA%A6%E6%88%90%E4%B8%BA%E9%AD%94%E6%B3%95%E5%B0%91%E5%A5%B3%E5%90%A7%EF%BC%81/">
-                阅读全文 &raquo;
-              </a>
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/02/07/hexo%E7%9A%84%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3%E8%AF%B4%E6%98%8E/" rel="prev" title="hexo的配置相关说明">
+                  <i class="fa fa-chevron-left"></i> hexo的配置相关说明
+                </a>
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/02/%E6%89%93%E7%A0%B4%E6%9E%B7%E9%94%81/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/uploads/%E7%B2%BE%E7%A5%9E%E5%B0%8F%E5%A6%B9.jpg">
-      <meta itemprop="name" content="小炒面">
-      <meta itemprop="description" content="吾之生前，万籁俱寂<br>吾之身后，了无生机">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="斯是陋室惟吾德馨">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/02/02/%E6%89%93%E7%A0%B4%E6%9E%B7%E9%94%81/" class="post-title-link" itemprop="url">打破枷锁</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-02-02 21:23:47" itemprop="dateCreated datePublished" datetime="2021-02-02T21:23:47+08:00">2021-02-02</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-02-05 01:48:41" itemprop="dateModified" datetime="2021-02-05T01:48:41+08:00">2021-02-05</time>
-      </span>
-
-  
-      </div>
-      <div class="post-meta">
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>3.7k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>3 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>一切的开始...</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/02/02/%E6%89%93%E7%A0%B4%E6%9E%B7%E9%94%81/">
-                阅读全文 &raquo;
-              </a>
+            <div class="post-nav-item">
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/02/%E5%BC%80%E5%A7%8B%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B9%8B%E6%97%85/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/uploads/%E7%B2%BE%E7%A5%9E%E5%B0%8F%E5%A6%B9.jpg">
-      <meta itemprop="name" content="小炒面">
-      <meta itemprop="description" content="吾之生前，万籁俱寂<br>吾之身后，了无生机">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="斯是陋室惟吾德馨">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/02/02/%E5%BC%80%E5%A7%8B%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B9%8B%E6%97%85/" class="post-title-link" itemprop="url">开始我的博客之旅</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-02-02 11:09:08" itemprop="dateCreated datePublished" datetime="2021-02-02T11:09:08+08:00">2021-02-02</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-02-08 18:19:44" itemprop="dateModified" datetime="2021-02-08T18:19:44+08:00">2021-02-08</time>
-      </span>
-
-  
-      </div>
-      <div class="post-meta">
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>50</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="新的篇章"><a href="#新的篇章" class="headerlink" title="新的篇章"></a>新的篇章</h1><p>经过一晚的奋战，我的第一篇博客发表啦，后续会更新记录我的博客搭建方法</p>
-<p><del>希望能坚持写下去</del></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/02/02/%E5%BC%80%E5%A7%8B%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B9%8B%E6%97%85/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          </div>
     </footer>
   </article>
 </div>
@@ -951,6 +515,8 @@
 
 
 
+
+    <div class="comments" id="lv-container" data-id="city" data-uid="MTAyMC81MjY3NC8yOTE1MQ=="></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -1087,6 +653,21 @@ document.addEventListener('pjax:success', () => {
     <div class="pjax">
 
 
+<script>
+NexT.utils.loadComments('#lv-container', () => {
+  window.livereOptions = {
+    refer: "2021/02/12/JAVA基础/"
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+});
+</script>
 
     </div>
 </body>
