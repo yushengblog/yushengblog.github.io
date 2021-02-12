@@ -23,7 +23,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"manual"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"manual"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 <meta name="description" content="吾之生前，万籁俱寂吾之身后，了无生机">
 <meta property="og:type" content="website">
@@ -244,7 +244,6 @@
     <span>0%</span>
   </div>
   <div class="reading-progress-bar"></div>
-  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
@@ -292,7 +291,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-02-13 02:42:32" itemprop="dateModified" datetime="2021-02-13T02:42:32+08:00">2021-02-13</time>
+        <time title="修改时间：2021-02-13 02:48:15" itemprop="dateModified" datetime="2021-02-13T02:48:15+08:00">2021-02-13</time>
       </span>
 
   
@@ -321,147 +320,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><h4 id="单行注释"><a href="#单行注释" class="headerlink" title="单行注释"></a>单行注释</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//这一行就是单行注释,该行都会被注释掉</span></span><br></pre></td></tr></table></figure>
-<h4 id="多行注释"><a href="#多行注释" class="headerlink" title="多行注释"></a>多行注释</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**/这是多行注释符号</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">我是多行注释</span></span><br><span class="line"><span class="comment">我是多行注释</span></span><br><span class="line"><span class="comment">我是多行注释</span></span><br><span class="line"><span class="comment">我是多行注释</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-<h4 id="文档注释"><a href="#文档注释" class="headerlink" title="文档注释"></a>文档注释</h4><p>文档注释内书写的某段文字是能被<strong>JavaDoc</strong>识别的</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 我是单行注释。   文档注释以/**开头，*/结尾，如下</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">*<span class="doctag">@Description</span> HelloWorld</span></span><br><span class="line"><span class="comment">*<span class="doctag">@Author</span> Misaka</span></span><br><span class="line"><span class="comment">*......</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-<hr>
-<h3 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h3><p>Java所有的组成部分都需要名字。</p>
-<p>类名、变量名以及方法名都被称为标识符。</p>
-<h4 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h4><table>
-<thead>
-<tr>
-<th>abstract</th>
-<th>assert</th>
-<th>boolean</th>
-<th>break</th>
-<th>byte</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>case</td>
-<td>catch</td>
-<td>char</td>
-<td>class</td>
-<td>const</td>
-</tr>
-<tr>
-<td>continue</td>
-<td>default</td>
-<td>do</td>
-<td>double</td>
-<td>else</td>
-</tr>
-<tr>
-<td>enum</td>
-<td>extends</td>
-<td>final</td>
-<td>finally</td>
-<td>float</td>
-</tr>
-<tr>
-<td>for</td>
-<td>goto</td>
-<td>if</td>
-<td>implements</td>
-<td>import</td>
-</tr>
-<tr>
-<td>instanceof</td>
-<td>int</td>
-<td>interface</td>
-<td>long</td>
-<td>native</td>
-</tr>
-<tr>
-<td>new</td>
-<td>package</td>
-<td>private</td>
-<td>protected</td>
-<td>public</td>
-</tr>
-<tr>
-<td>return</td>
-<td>strictfp</td>
-<td>short</td>
-<td>static</td>
-<td>super</td>
-</tr>
-<tr>
-<td>switch</td>
-<td>synchronized</td>
-<td>this</td>
-<td>throw</td>
-<td>throws</td>
-</tr>
-<tr>
-<td>transient</td>
-<td>try</td>
-<td>void</td>
-<td>volatile</td>
-<td>while</td>
-</tr>
-</tbody></table>
-<hr>
-<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><h4 id="基本数据类型（primitive-type）"><a href="#基本数据类型（primitive-type）" class="headerlink" title="基本数据类型（primitive type）"></a>基本数据类型（primitive type）</h4><p><strong>数值类型：</strong></p>
-<figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">          <span class="built_in">byte</span>： 占<span class="number">1</span>个字节范围：<span class="number">-128</span>~<span class="number">127</span></span><br><span class="line"></span><br><span class="line">          <span class="built_in">short</span>：占<span class="number">2</span>个字节范围：<span class="number">-32768</span>~<span class="number">32767</span></span><br><span class="line">整数类型</span><br><span class="line">          <span class="built_in">int</span>：占<span class="number">4</span>个字节范围：<span class="number">-2147483648</span>~<span class="number">2147483647</span>  <span class="meta">#常用</span></span><br><span class="line"></span><br><span class="line">          <span class="built_in">long</span>：占<span class="number">8</span>个字节范围：<span class="number">9223372036854775808</span>~<span class="number">9223372036854775807</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">          <span class="built_in">float</span>：占<span class="number">4</span>个字节范围</span><br><span class="line">浮点类型</span><br><span class="line">          <span class="built_in">double</span>：占<span class="number">8</span>个字节范围  <span class="meta">#常用</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">字符类型   <span class="built_in">char</span>占<span class="number">2</span>个字节  <span class="meta">#汉字则只能指一个字，因为一个字占2个字节</span></span><br></pre></td></tr></table></figure>
-<p>long类型要在数字后面加个L，float类型要在数字后面加个F</p>
-<p><strong>boolean类型（布尔值）：</strong></p>
-<p>占1位其值只有true和false两个</p>
-<p>1B（byte,字节）=8b（bit,位）</p>
-<p>1024B=1KB</p>
-<p>1024KB=1M</p>
-<p>1024M=1G</p>
-<h4 id="引用数据类型（Reference-Type）"><a href="#引用数据类型（Reference-Type）" class="headerlink" title="引用数据类型（Reference Type）"></a>引用数据类型（Reference Type）</h4><p>类</p>
-<p>接口</p>
-<p>数组</p>
-<h4 id="数据类型扩展"><a href="#数据类型扩展" class="headerlink" title="数据类型扩展"></a>数据类型扩展</h4><h5 id="整数扩展："><a href="#整数扩展：" class="headerlink" title="整数扩展："></a>整数扩展：</h5><p>二进制：以0b开头的数字</p>
-<p>八进制：以0开头的数字</p>
-<p>十进制：常规数字</p>
-<p>十六进制：以0x开头的数字  0-9 A-F</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i=<span class="number">10</span>;<span class="comment">//十进制</span></span><br><span class="line"><span class="keyword">int</span> i2=<span class="number">010</span>;<span class="comment">//八进制</span></span><br><span class="line"><span class="keyword">int</span> i3=<span class="number">0x10</span>;<span class="comment">//十六进制</span></span><br><span class="line"><span class="keyword">int</span> i4=<span class="number">0x11</span>;<span class="comment">//十六进制</span></span><br><span class="line"></span><br><span class="line">System.out.println(i);</span><br><span class="line">System.out.println(i2);</span><br><span class="line">System.out.println(i3);</span><br><span class="line">System.out.println(i4);</span><br></pre></td></tr></table></figure>
-<figure class="highlight golo"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">out:</span><br><span class="line"><span class="number">10</span></span><br><span class="line"><span class="number">8</span></span><br><span class="line"><span class="number">16</span></span><br><span class="line"><span class="number">17</span></span><br><span class="line"></span><br><span class="line">/*为何使用<span class="keyword">println</span>而不是<span class="keyword">print</span>进行输出</span><br><span class="line">*<span class="keyword">println</span>表示换行输出，<span class="keyword">print</span>都在同行输出</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
-<h5 id="浮点数扩展："><a href="#浮点数扩展：" class="headerlink" title="浮点数扩展："></a>浮点数扩展：</h5><p>float 有限  离散  舍入误差  大约  接近但不等于</p>
-<p>double</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">float</span> f=<span class="number">0.1F</span>;    <span class="comment">//实际应为0.1</span></span><br><span class="line"><span class="keyword">double</span> d=<span class="number">1.0</span>/<span class="number">10</span>; <span class="comment">//实际应为0.1</span></span><br><span class="line"></span><br><span class="line">System.out.println(f==d);</span><br></pre></td></tr></table></figure>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">out:</span></span><br><span class="line"><span class="literal">false</span></span><br></pre></td></tr></table></figure>
-<p>最好完全避免使用浮点数进行比较</p>
-<p>可以使用BigDecimal 数学工具类</p>
-<h5 id="字符扩展"><a href="#字符扩展" class="headerlink" title="字符扩展"></a>字符扩展</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> c1=<span class="string">&#x27;a&#x27;</span>;</span><br><span class="line"><span class="keyword">char</span> c2=<span class="string">&#x27;中&#x27;</span>;</span><br><span class="line"></span><br><span class="line">System.out.println(c1);</span><br><span class="line">System.out.println((<span class="keyword">int</span>)c1);<span class="comment">//强制转换成int</span></span><br><span class="line">System.out.println(c2);</span><br><span class="line">System.out.println((<span class="keyword">int</span>)c2);<span class="comment">//强制转换成int</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ou</span><span class="variable">t:</span></span><br><span class="line"><span class="keyword">a</span></span><br><span class="line"><span class="number">97</span></span><br><span class="line">中</span><br><span class="line"><span class="number">20013</span></span><br></pre></td></tr></table></figure>
-<p>所有字符本质还是数字，对应<strong>Unicode</strong>编码</p>
-<h5 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h5><p>\t 制表符</p>
-<p>\n 换行符</p>
-<p>…</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;Hello\tWorld&quot;</span>);</span><br><span class="line">System.out.println(<span class="string">&quot;Hello\nWorld&quot;</span>);</span><br></pre></td></tr></table></figure>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">out:</span><br><span class="line">Hello   World</span><br><span class="line">Hello</span><br><span class="line">World</span><br></pre></td></tr></table></figure>
-<hr>
-<h3 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h3><p>低——————————————————&gt;高</p>
-<p>byte,short,char–&gt;int–&gt;long–&gt;float–&gt;double</p>
-<ul>
-<li><p>Java是强类型语言，所有进行有些运算的时候，需要用到类型转换</p>
-</li>
-<li><p>运算中，不同类型的数据先转换为同一类型，然后再进行运算</p>
-</li>
-<li><p>强制转换：从高转到低  <strong>(类型)变量名</strong></p>
-</li>
-<li><p>自动转换：从低转到高  可以直接转</p>
-</li>
-<li><p>但是由高转低要注意<strong>内存溢出问题</strong>和<strong>丢失精度问题</strong></p>
-</li>
-<li><p>不能对布尔值进行转换</p>
-</li>
-<li><p>不能把对象类型转换为不相干的类型</p>
-</li>
-<li><p>在计算时可以先把一个数转换为一种类型，计算结果也为该类型</p>
-</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> i=<span class="number">128</span>;</span><br><span class="line"><span class="keyword">byte</span> b=(<span class="keyword">byte</span>)i;<span class="comment">//想让i赋值给b,需要强制转换int类型到byte</span></span><br><span class="line"><span class="keyword">char</span> c=<span class="string">&#x27;a&#x27;</span>;</span><br><span class="line"><span class="keyword">int</span> d=c+<span class="number">1</span>;</span><br><span class="line"><span class="keyword">int</span> money=<span class="number">10_0000_0000</span>;</span><br><span class="line"><span class="keyword">int</span> years=<span class="number">20</span>;</span><br><span class="line"><span class="keyword">int</span> total=money*years;</span><br><span class="line"><span class="keyword">long</span> total2=money*years;</span><br><span class="line"><span class="keyword">long</span> total3=money*((<span class="keyword">long</span>)years);</span><br><span class="line"></span><br><span class="line">System.out.println(i);</span><br><span class="line">System.out.println(b);</span><br><span class="line">System.out.println((<span class="keyword">int</span>)<span class="number">23.7</span>);</span><br><span class="line">System.out.println((<span class="keyword">int</span>)-<span class="number">45.89F</span>);</span><br><span class="line">System.out.println(d);</span><br><span class="line">System.out.println((<span class="keyword">char</span>)d);</span><br><span class="line">System.out.println(total);</span><br><span class="line">System.out.println(total2);</span><br><span class="line">System.out.println(total3);</span><br></pre></td></tr></table></figure>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">out:</span><br><span class="line"><span class="number">128</span></span><br><span class="line">-<span class="number">128</span><span class="comment">//内存溢出，结果不正确</span></span><br><span class="line"><span class="number">23</span></span><br><span class="line">-<span class="number">45</span></span><br><span class="line"><span class="number">98</span></span><br><span class="line">b</span><br><span class="line">-<span class="number">1474836480</span><span class="comment">//计算时内存溢出了</span></span><br><span class="line">-<span class="number">1474836480</span><span class="comment">//默认是int，转换之前已经存在问题了</span></span><br><span class="line"><span class="number">20000000000</span><span class="comment">//先把一个数转换为long</span></span><br></pre></td></tr></table></figure>
-<hr>
-<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3>
+          <p>开始JAVA的基础学习</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/02/12/JAVA%E5%9F%BA%E7%A1%80/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1036,7 +903,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@next-theme/pjax@0.4.0/pjax.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script><script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script>
 var pjax = new Pjax({
   selectors: [
     'head title',
