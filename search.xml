@@ -104,21 +104,21 @@
 <p>十进制：常规数字</p>
 <p>十六进制：以0x开头的数字  0-9 A-F</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> i=<span class="number">10</span>;<span class="comment">//十进制</span></span><br><span class="line"><span class="keyword">int</span> i2=<span class="number">010</span>;<span class="comment">//八进制</span></span><br><span class="line"><span class="keyword">int</span> i3=<span class="number">0x10</span>;<span class="comment">//十六进制</span></span><br><span class="line"><span class="keyword">int</span> i4=<span class="number">0x11</span>;<span class="comment">//十六进制</span></span><br><span class="line"></span><br><span class="line">System.out.println(i);</span><br><span class="line">System.out.println(i2);</span><br><span class="line">System.out.println(i3);</span><br><span class="line">System.out.println(i4);</span><br></pre></td></tr></table></figure>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">out:</span><br><span class="line"><span class="number">10</span></span><br><span class="line"><span class="number">8</span></span><br><span class="line"><span class="number">16</span></span><br><span class="line"><span class="number">17</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*为何使用println而不是print进行输出</span></span><br><span class="line"><span class="comment">*println表示换行输出，print都在同行输出</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//out</span></span><br><span class="line"><span class="number">10</span></span><br><span class="line"><span class="number">8</span></span><br><span class="line"><span class="number">16</span></span><br><span class="line"><span class="number">17</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*为何使用println而不是print进行输出</span></span><br><span class="line"><span class="comment">*println表示换行输出，print都在同行输出</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
 <h5 id="浮点数扩展："><a href="#浮点数扩展：" class="headerlink" title="浮点数扩展："></a>浮点数扩展：</h5><p>float 有限  离散  舍入误差  大约  接近但不等于</p>
 <p>double</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">float</span> f=<span class="number">0.1F</span>;    <span class="comment">//实际应为0.1</span></span><br><span class="line"><span class="keyword">double</span> d=<span class="number">1.0</span>/<span class="number">10</span>; <span class="comment">//实际应为0.1</span></span><br><span class="line"></span><br><span class="line">System.out.println(f==d);</span><br></pre></td></tr></table></figure>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">out:</span><br><span class="line"><span class="keyword">false</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//out</span></span><br><span class="line"><span class="keyword">false</span></span><br></pre></td></tr></table></figure>
 <p>最好完全避免使用浮点数进行比较</p>
 <p>可以使用BigDecimal 数学工具类</p>
 <h5 id="字符扩展"><a href="#字符扩展" class="headerlink" title="字符扩展"></a>字符扩展</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">char</span> c1=<span class="string">&#x27;a&#x27;</span>;</span><br><span class="line"><span class="keyword">char</span> c2=<span class="string">&#x27;中&#x27;</span>;</span><br><span class="line"></span><br><span class="line">System.out.println(c1);</span><br><span class="line">System.out.println((<span class="keyword">int</span>)c1);<span class="comment">//强制转换成int</span></span><br><span class="line">System.out.println(c2);</span><br><span class="line">System.out.println((<span class="keyword">int</span>)c2);<span class="comment">//强制转换成int</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">out:</span><br><span class="line">a</span><br><span class="line"><span class="number">97</span></span><br><span class="line">中</span><br><span class="line"><span class="number">20013</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//out</span></span><br><span class="line">a</span><br><span class="line"><span class="number">97</span></span><br><span class="line">中</span><br><span class="line"><span class="number">20013</span></span><br></pre></td></tr></table></figure>
 <p>所有字符本质还是数字，对应<strong>Unicode</strong>编码</p>
 <h5 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h5><p>\t 制表符</p>
 <p>\n 换行符</p>
 <p>…</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;Hello\tWorld&quot;</span>);</span><br><span class="line">System.out.println(<span class="string">&quot;Hello\nWorld&quot;</span>);</span><br></pre></td></tr></table></figure>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">out:</span><br><span class="line">Hello   World</span><br><span class="line">Hello</span><br><span class="line">World</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//out</span></span><br><span class="line">Hello   World</span><br><span class="line">Hello</span><br><span class="line">World</span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h3><p>低——————————————————&gt;高</p>
 <p>byte,short,char–&gt;int–&gt;long–&gt;float–&gt;double</p>
@@ -141,9 +141,117 @@
 </li>
 </ul>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> i=<span class="number">128</span>;</span><br><span class="line"><span class="keyword">byte</span> b=(<span class="keyword">byte</span>)i;<span class="comment">//想让i赋值给b,需要强制转换int类型到byte</span></span><br><span class="line"><span class="keyword">char</span> c=<span class="string">&#x27;a&#x27;</span>;</span><br><span class="line"><span class="keyword">int</span> d=c+<span class="number">1</span>;</span><br><span class="line"><span class="keyword">int</span> money=<span class="number">10_0000_0000</span>;</span><br><span class="line"><span class="keyword">int</span> years=<span class="number">20</span>;</span><br><span class="line"><span class="keyword">int</span> total=money*years;</span><br><span class="line"><span class="keyword">long</span> total2=money*years;</span><br><span class="line"><span class="keyword">long</span> total3=money*((<span class="keyword">long</span>)years);</span><br><span class="line"></span><br><span class="line">System.out.println(i);</span><br><span class="line">System.out.println(b);</span><br><span class="line">System.out.println((<span class="keyword">int</span>)<span class="number">23.7</span>);</span><br><span class="line">System.out.println((<span class="keyword">int</span>)-<span class="number">45.89F</span>);</span><br><span class="line">System.out.println(d);</span><br><span class="line">System.out.println((<span class="keyword">char</span>)d);</span><br><span class="line">System.out.println(total);</span><br><span class="line">System.out.println(total2);</span><br><span class="line">System.out.println(total3);</span><br></pre></td></tr></table></figure>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">out:</span><br><span class="line"><span class="number">128</span></span><br><span class="line">-<span class="number">128</span><span class="comment">//内存溢出，结果不正确</span></span><br><span class="line"><span class="number">23</span></span><br><span class="line">-<span class="number">45</span></span><br><span class="line"><span class="number">98</span></span><br><span class="line">b</span><br><span class="line">-<span class="number">1474836480</span><span class="comment">//计算时内存溢出了</span></span><br><span class="line">-<span class="number">1474836480</span><span class="comment">//默认是int，转换之前已经存在问题了</span></span><br><span class="line"><span class="number">20000000000</span><span class="comment">//先把一个数转换为long</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//out</span></span><br><span class="line"><span class="number">128</span></span><br><span class="line">-<span class="number">128</span><span class="comment">//内存溢出，结果不正确</span></span><br><span class="line"><span class="number">23</span></span><br><span class="line">-<span class="number">45</span></span><br><span class="line"><span class="number">98</span></span><br><span class="line">b</span><br><span class="line">-<span class="number">1474836480</span><span class="comment">//计算时内存溢出了</span></span><br><span class="line">-<span class="number">1474836480</span><span class="comment">//默认是int，转换之前已经存在问题了</span></span><br><span class="line"><span class="number">20000000000</span><span class="comment">//先把一个数转换为long</span></span><br></pre></td></tr></table></figure>
 <hr>
-<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3>]]></content>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><ul>
+<li><p>Java是强类型语言，每个变量都要声明其类型</p>
+</li>
+<li><p>Java变量是程序中最基本的存储单元，其要素包括变量名，变量类型和作用域</p>
+</li>
+<li><p>每个变量都有类型，类型可以是基本类型，也可以是引用类型</p>
+</li>
+<li><p>变量名必须是合法的标识符</p>
+</li>
+<li><p>变量声明是一条完整的语句，因此每一个声明都必须以分号结束</p>
+</li>
+</ul>
+<h4 id="变量的作用域"><a href="#变量的作用域" class="headerlink" title="变量的作用域"></a>变量的作用域</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">variable</span></span>&#123;</span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">int</span> allClicks=<span class="number">0</span>;  <span class="comment">//类变量：可以称为全局变量，前面要加static（这是修饰符），写在类里面，可在全局使用</span></span><br><span class="line">    String str=<span class="string">&quot;hello world&quot;</span>;  <span class="comment">//实例变量</span></span><br><span class="line">     <span class="comment">/*实例变量：从属于对象，在方法外，类里面，如果不自行初始化，这个类型的默认值是0，0.0</span></span><br><span class="line"><span class="comment">      布尔值默认是false，除了基本类型，其余默认值都是null*/</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">method</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> i=<span class="number">0</span>;  <span class="comment">//局部变量：是在方法中写，例如main方法等等</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h4><ul>
+<li><p>常量（Constant）：初始化（initialize）后不能再改变值！不会变动的值</p>
+</li>
+<li><p>常量名一般用大写字符</p>
+</li>
+<li><p>书写方法，在前面加final（这是修饰符），如：final 常量名=值</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">final</span> <span class="keyword">double</span> PI=<span class="number">3.14</span></span><br></pre></td></tr></table></figure>
+<h4 id="变量的命名规范"><a href="#变量的命名规范" class="headerlink" title="变量的命名规范"></a>变量的命名规范</h4><ul>
+<li><p>所有变量、方法、类名：见名知意</p>
+</li>
+<li><p>类成员变量：首字母小写和驼峰原则：monthSalary</p>
+</li>
+<li><p>局部变量：首字母小写和驼峰原则</p>
+</li>
+<li><p>方法名：首字母小写和驼峰原则：run(),runRun()</p>
+</li>
+<li><p>类名：首字母大写和驼峰原则：Man,GoodMan</p>
+</li>
+<li><p>常量：大写字母和下划线：MAX_VALUE</p>
+</li>
+</ul>
+<hr>
+<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><p>Java语言支持如下运算符：</p>
+<p>以下重点掌握</p>
+<ul>
+<li>算术运算符 +，-，*，/，%（取余，模运算），++（自增），–（自减）</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//二元运算符</span></span><br><span class="line"><span class="comment">//ctrl+D：复制当前行到下一行</span></span><br><span class="line"><span class="keyword">int</span> a=<span class="number">10</span>;</span><br><span class="line"><span class="keyword">int</span> b=<span class="number">20</span>;</span><br><span class="line"><span class="keyword">int</span> c=<span class="number">21</span>;</span><br><span class="line"></span><br><span class="line">System.out.println(a+b);</span><br><span class="line">System.out.println(a-b);</span><br><span class="line">System.out.println(a*b);</span><br><span class="line">System.out.println(a/b);</span><br><span class="line">System.out.println(c%b);</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//out</span></span><br><span class="line"><span class="number">30</span></span><br><span class="line">-<span class="number">10</span></span><br><span class="line"><span class="number">200</span></span><br><span class="line"><span class="number">0</span> <span class="comment">//实际应为0.5，但类型是int所以取整了，输出(a/(double)b)即可</span></span><br><span class="line"><span class="number">1</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//混合运算</span></span><br><span class="line"><span class="keyword">long</span> a=<span class="number">123123123123123L</span>;</span><br><span class="line"><span class="keyword">int</span> b=<span class="number">123</span>;</span><br><span class="line"><span class="keyword">short</span> c=<span class="number">10</span>;</span><br><span class="line"><span class="keyword">byte</span> d=<span class="number">8</span>;</span><br><span class="line"></span><br><span class="line">System.out.println(a+b+c+d); <span class="comment">//输出为long</span></span><br><span class="line">System.out.println(b+c+d); <span class="comment">//输出为int</span></span><br><span class="line">System.out.println(c+d); <span class="comment">//输出为int </span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//out</span></span><br><span class="line"><span class="number">123123123123264</span></span><br><span class="line"><span class="number">141</span></span><br><span class="line"><span class="number">18</span></span><br><span class="line"><span class="comment">//混合运算时自动升为混合运算类型中最高类型，好像最低也是int？</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//++自增，--自减 一元运算符</span></span><br><span class="line"><span class="keyword">int</span> a=<span class="number">3</span></span><br><span class="line"><span class="keyword">int</span> b=a++; <span class="comment">//先赋值给b，再执行a=a+1</span></span><br><span class="line"><span class="keyword">int</span> c=++a; <span class="comment">//先执行a=a+1，再赋值给c</span></span><br><span class="line"></span><br><span class="line">System.out.println(a);</span><br><span class="line">System.out.println(b);</span><br><span class="line">System.out.println(c);</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//out</span></span><br><span class="line"><span class="number">5</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">5</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>赋值运算符 =</p>
+</li>
+<li><p>关系运算符 &gt;，&lt;，&gt;=，&lt;=，==，!=，instanceof</p>
+</li>
+<li><p>逻辑运算符 &amp;&amp;（与），||（或），!（非）</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">boolean</span> a=<span class="keyword">true</span>;</span><br><span class="line"><span class="keyword">boolean</span> b=<span class="keyword">false</span>;</span><br><span class="line"></span><br><span class="line">System.out.println(<span class="string">&quot;a&amp;&amp;b:&quot;</span>+(a&amp;&amp;b)); <span class="comment">//与：两个变量都为真，结果才为真</span></span><br><span class="line">System.out.println(<span class="string">&quot;a||b:&quot;</span>+(a||b)); <span class="comment">//或：两个变量中一个为真，结果就为真</span></span><br><span class="line">System.out.println(<span class="string">&quot;!(a&amp;&amp;b):&quot;</span>+!(a&amp;&amp;b)); <span class="comment">//非：非假即真</span></span><br><span class="line"><span class="comment">/*这里的+是字符串连接符，只要在+左侧出现了String（字符串类型），就只起到连接作用，不会进行计算；</span></span><br><span class="line"><span class="comment">*但是+的运算顺序是自左到右，如果左侧先出现的是算式，则会先计算再执行连接作用*/</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//out</span></span><br><span class="line">a&amp;&amp;b:<span class="keyword">false</span></span><br><span class="line">a||b:<span class="keyword">true</span></span><br><span class="line">!(a&amp;&amp;b):<span class="keyword">true</span></span><br></pre></td></tr></table></figure>
+<p>以下了解即可</p>
+<ul>
+<li>位运算符 &amp;（与），|（或），~（非），^（异或），&gt;&gt;（右移），&lt;&lt;（左移），&gt;&gt;&gt;</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">A = <span class="number">0011</span> <span class="number">1100</span></span><br><span class="line">B = <span class="number">0000</span> <span class="number">1101</span></span><br><span class="line"><span class="comment">//可以把1当成true，0当成false</span></span><br><span class="line">A&amp;B = <span class="number">0000</span> <span class="number">1100</span> <span class="comment">//对应位都为1才为1</span></span><br><span class="line">A|B = <span class="number">0011</span> <span class="number">1101</span> <span class="comment">//对应位有1结果就为1</span></span><br><span class="line">~B = <span class="number">1111</span> <span class="number">0010</span> <span class="comment">//对应位取反</span></span><br><span class="line">A^B = <span class="number">0011</span> <span class="number">0001</span> <span class="comment">//对应位相同为0，不同为1</span></span><br></pre></td></tr></table></figure>
+<p>2*8如何计算最快，利用位运算</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="number">2</span>&lt;&lt;<span class="number">3</span>) <span class="comment">//即2左移3位</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//out</span></span><br><span class="line"><span class="number">16</span></span><br><span class="line"><span class="comment">/*0000 0000 表示0</span></span><br><span class="line"><span class="comment">* 0000 0001 表示1</span></span><br><span class="line"><span class="comment">* 0000 0010 表示2</span></span><br><span class="line"><span class="comment">* 0000 0011 表示3</span></span><br><span class="line"><span class="comment">* 0000 0100 表示4</span></span><br><span class="line"><span class="comment">* 0000 1000 表示8</span></span><br><span class="line"><span class="comment">* 0001 0000 表示16</span></span><br><span class="line"><span class="comment">* 得出结论：每移动一位，&lt;&lt;左移一位相当于将数字乘2，&gt;&gt;右移一位相当于将数字除以2</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>条件运算符 ? :</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* 三元运算符</span></span><br><span class="line"><span class="comment">* x?y:z</span></span><br><span class="line"><span class="comment">* 如果x==true，则结果为y，否则结果为z */</span></span><br><span class="line"><span class="keyword">int</span> score=<span class="number">80</span>;</span><br><span class="line">String type = score&lt;<span class="number">60</span> ?<span class="string">&quot;不及格&quot;</span>:<span class="string">&quot;及格&quot;</span>;</span><br><span class="line"></span><br><span class="line">System.out.println(type);</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//out</span></span><br><span class="line">及格</span><br></pre></td></tr></table></figure>
+<ul>
+<li>扩展赋值运算符 +=，-=，*=，/=</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> a=<span class="number">10</span>;</span><br><span class="line"><span class="keyword">int</span> b=<span class="number">20</span>;</span><br><span class="line"><span class="keyword">int</span> c=<span class="number">30</span>;</span><br><span class="line"></span><br><span class="line">a+=b; <span class="comment">//a=a+b</span></span><br><span class="line">c-=b; <span class="comment">//c=c-b</span></span><br><span class="line"></span><br><span class="line">System.out.println(a);</span><br><span class="line">System.out.println(c);</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//out</span></span><br><span class="line"><span class="number">30</span></span><br><span class="line"><span class="number">10</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="包机制"><a href="#包机制" class="headerlink" title="包机制"></a>包机制</h3><ul>
+<li><p>为了更好的组织类，Java提供了包机制，用于区别类名的命名空间</p>
+</li>
+<li><p>包语句的语法格式为：</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> pkg1[.pkg2[.pkg3...]];</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p> 一般利用公司域名倒置作为包名：com.baidu.www</p>
+</li>
+<li><p>为了能够使用某一个包的成员，我们需要在Java程序中明确导入该包。使用“import”语句可完成此功能</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> package1[.package2...].(classname|*);</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="JavaDoc"><a href="#JavaDoc" class="headerlink" title="JavaDoc"></a>JavaDoc</h3><ul>
+<li><p>javadoc命令是用来生成自己的API文档（帮助文档）</p>
+</li>
+<li><p>参数信息</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@author</span> <span class="comment">//作者名</span></span><br><span class="line"><span class="meta">@version</span> <span class="comment">//版本号</span></span><br><span class="line"><span class="meta">@since</span> <span class="comment">//指明需要最早使用的jdk版本</span></span><br><span class="line"><span class="meta">@param</span> <span class="comment">//参数名</span></span><br><span class="line"><span class="meta">@return</span> <span class="comment">//返回情况</span></span><br><span class="line"><span class="meta">@throws</span> <span class="comment">//异常抛出情况</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>在新建的Doc文件所在处打开命令行输入</li>
+</ul>
+<figure class="highlight vala"><table><tr><td class="code"><pre><span class="line">javadoc -encoding UTF<span class="number">-8</span> -charset UTF<span class="number">-8</span> Doc.java</span><br><span class="line"><span class="meta"># javadoc后面的参数</span></span><br><span class="line"><span class="meta"># -encoding UTF-8 -charset UTF-8</span></span><br><span class="line"><span class="meta"># 是为了解决中文乱码问题</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>IDEA 生成 javadoc 文档</p>
+<p>  查看<a href="https://blog.csdn.net/future_ll/article/details/104100098">此处</a></p>
+</li>
+</ul>
+]]></content>
       <tags>
         <tag>JAVA</tag>
       </tags>
