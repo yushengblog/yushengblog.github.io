@@ -273,34 +273,19 @@
 <hr>
 <h2 id="一、图片问题"><a href="#一、图片问题" class="headerlink" title="一、图片问题"></a>一、图片问题</h2><h3 id="1-管理好图片"><a href="#1-管理好图片" class="headerlink" title="1.管理好图片"></a>1.管理好图片</h3><p>可以使用图片托管，我喜欢保存在本地，使用如下方法</p>
 <p>打开站点配置文件，找到post_asset_folder将其改为true</p>
-<pre><code># Writing
-new_post_name: :title.md # File name of new posts
-default_layout: post
-titlecase: false # Transform title into titlecase
-external_link:
-  enable: true # Open external links in new tab
-  field: site # Apply to the whole site
-  exclude: &#39;&#39;
-filename_case: 0
-nder_drafts: false
-post_asset_folder: true  #改这里
-</code></pre>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Writing</span></span><br><span class="line"><span class="attr">new_post_name:</span> <span class="string">:title.md</span> <span class="comment"># File name of new posts</span></span><br><span class="line"><span class="attr">default_layout:</span> <span class="string">post</span></span><br><span class="line"><span class="attr">titlecase:</span> <span class="literal">false</span> <span class="comment"># Transform title into titlecase</span></span><br><span class="line"><span class="attr">external_link:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span> <span class="comment"># Open external links in new tab</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">site</span> <span class="comment"># Apply to the whole site</span></span><br><span class="line">  <span class="attr">exclude:</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="attr">filename_case:</span> <span class="number">0</span></span><br><span class="line"><span class="attr">nder_drafts:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span>  <span class="comment">#改这里</span></span><br></pre></td></tr></table></figure>
 <p>然后Git Bash进入该目录，执行</p>
-<pre><code>npm install hexo-asset-image --save
-</code></pre>
+<figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line">npm install hexo-asset-<span class="built_in">image</span> --<span class="built_in">save</span></span><br></pre></td></tr></table></figure>
 <p>如果不行则执行</p>
-<pre><code>npm install -g cnpm --registry=https://registry.npm.taobao.org
-</code></pre>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry=https:<span class="regexp">//</span>registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
 <p>然后执行</p>
-<pre><code>cnpm install hexo-asset-image --save
-</code></pre>
+<figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line">cnpm install hexo-asset-<span class="built_in">image</span> --<span class="built_in">save</span></span><br></pre></td></tr></table></figure>
 <p>此时执行hexo new “xxx”会同时在_post文件夹下生成同名文件夹，文件夹里放图片</p>
 <p>如果上传后网页查看图片仍有问题，可以重新安装。使用此命令</p>
-<pre><code>npm install https://github.com/CodeFalling/hexo-asset-image --save
-</code></pre>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">npm install https:<span class="regexp">//gi</span>thub.com<span class="regexp">/CodeFalling/</span>hexo-asset-image --save</span><br></pre></td></tr></table></figure>
 <p>不行就用</p>
-<pre><code>cnpm install https://github.com/CodeFalling/hexo-asset-image --save
-</code></pre>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">cnpm install https:<span class="regexp">//gi</span>thub.com<span class="regexp">/CodeFalling/</span>hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+
 <h2 id="二、修改主题"><a href="#二、修改主题" class="headerlink" title="二、修改主题"></a>二、修改主题</h2><h3 id="1-安装主题"><a href="#1-安装主题" class="headerlink" title="1.安装主题"></a>1.安装主题</h3><p>可以在 <a href="https://hexo.io/themes/">https://hexo.io/themes/</a> 查找自己喜欢的主题</p>
 <p>个人觉得新手用 <strong><a href="https://github.com/iissnan/hexo-theme-next/releases">Next</a></strong> 比较好，官方教程比较详细，这里放出官方教程</p>
 <blockquote>
@@ -308,55 +293,32 @@ post_asset_folder: true  #改这里
 <p><a href="https://theme-next.iissnan.com/getting-started.html">https://theme-next.iissnan.com/getting-started.html</a></p>
 </blockquote>
 <p>在你的blog文件下的themes文件夹里，使用git bash </p>
-<pre><code>git clone https://github.com/iissnan/hexo-theme-next themes/next
-</code></pre>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">git clone https:<span class="regexp">//gi</span>thub.com<span class="regexp">/iissnan/</span>hexo-theme-<span class="keyword">next</span> themes/<span class="keyword">next</span></span><br></pre></td></tr></table></figure>
 <h3 id="2-启用主题"><a href="#2-启用主题" class="headerlink" title="2.启用主题"></a>2.启用主题</h3><p>打开站点配置文件，找到theme字段，并将其值更改为 next</p>
 <h3 id="3-背景动画设置"><a href="#3-背景动画设置" class="headerlink" title="3.背景动画设置"></a>3.背景动画设置</h3><p>我喜欢这个动画</p>
 <img src="/2021/02/07/hexo%E7%9A%84%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3%E8%AF%B4%E6%98%8E/1.png" width="100%" height="100%">
 
 <p>（1）打开Git进入自己文件夹/themes/next文件夹下</p>
 <p>（2）运行命令</p>
-<pre><code>git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canvas-nest
-</code></pre>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">git clone https:<span class="regexp">//gi</span>thub.com<span class="regexp">/theme-next/</span>theme-<span class="keyword">next</span>-canvas-nest source<span class="regexp">/lib/</span>canvas-nest</span><br></pre></td></tr></table></figure>
 <p>（2）详情可见 <a href="https://github.com/theme-next/theme-next-canvas-nest">Hexo Next背景动画Canvas_nest</a> 官方文件进行配置</p>
 <p>首先在你的博客根目录下找到source文件夹</p>
 <p>然后进入_data文件夹内（没有该文件夹就新建一个）</p>
 <p>新建一个footer.njk文件，并编辑此文件添加以下内容</p>
-<pre><code>&lt;script color=&quot;0,0,255&quot; opacity=&quot;0.5&quot; zIndex=&quot;-1&quot; count=&quot;99&quot; src=&quot;https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js&quot;&gt;&lt;/script&gt;
-</code></pre>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&lt;script <span class="attribute">color</span>=<span class="string">&quot;0,0,255&quot;</span> <span class="attribute">opacity</span>=<span class="string">&quot;0.5&quot;</span> <span class="attribute">zIndex</span>=<span class="string">&quot;-1&quot;</span> <span class="attribute">count</span>=<span class="string">&quot;99&quot;</span> <span class="attribute">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js&quot;</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 <p>自行修改参数，可以对动画自定义</p>
 <p>（3）进入主题配置文件，取消footer行的注释</p>
-<pre><code># Define custom file paths.
-# Create your custom files in site directory `source/_data` and uncomment needed files below.
-custom_file_path:
-  #head: source/_data/head.njk
-  #header: source/_data/header.njk
-  #sidebar: source/_data/sidebar.njk
-  #postMeta: source/_data/post-meta.njk
-  #postBodyEnd: source/_data/post-body-end.njk
-  footer: source/_data/footer.njk     #我在这里
-  #bodyEnd: source/_data/body-end.njk
-  #variable: source/_data/variables.styl
-  #mixin: source/_data/mixins.styl
-  #style: source/_data/styles.styl
-</code></pre>
+<figure class="highlight gradle"><table><tr><td class="code"><pre><span class="line"># Define custom <span class="keyword">file</span> paths.</span><br><span class="line"># Create your custom files in site directory `<span class="keyword">source</span>/_data` and uncomment needed files below.</span><br><span class="line">custom_file_path:</span><br><span class="line">  #head: <span class="keyword">source</span><span class="regexp">/_data/</span>head.njk</span><br><span class="line">  #header: <span class="keyword">source</span><span class="regexp">/_data/</span>header.njk</span><br><span class="line">  #sidebar: <span class="keyword">source</span><span class="regexp">/_data/</span>sidebar.njk</span><br><span class="line">  #postMeta: <span class="keyword">source</span><span class="regexp">/_data/</span>post-meta.njk</span><br><span class="line">  #postBodyEnd: <span class="keyword">source</span><span class="regexp">/_data/</span>post-body-end.njk</span><br><span class="line">  footer: <span class="keyword">source</span><span class="regexp">/_data/</span>footer.njk     #我在这里</span><br><span class="line">  #bodyEnd: <span class="keyword">source</span><span class="regexp">/_data/</span>body-end.njk</span><br><span class="line">  #variable: <span class="keyword">source</span><span class="regexp">/_data/</span>variables.styl</span><br><span class="line">  #mixin: <span class="keyword">source</span><span class="regexp">/_data/mi</span>xins.styl</span><br><span class="line">  #style: <span class="keyword">source</span><span class="regexp">/_data/</span>styles.styl</span><br></pre></td></tr></table></figure>
 <p>成功部署网页后就有动画啦</p>
 <h3 id="三、设置hexo首页只显示部分摘要"><a href="#三、设置hexo首页只显示部分摘要" class="headerlink" title="三、设置hexo首页只显示部分摘要"></a>三、设置hexo首页只显示部分摘要</h3><p>针对Next主题，不确保对于其它主题有效（但从修改模式来看，是有效的）</p>
 <p>打开主题配置文件</p>
-<pre><code># Automatically excerpt description in homepage as preamble text.
-excerpt_description: true
-</code></pre>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Automatically excerpt description in homepage as preamble text.</span></span><br><span class="line"><span class="attr">excerpt_description:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 <p>之后有两种方法</p>
 <h4 id="方法一：写概述"><a href="#方法一：写概述" class="headerlink" title="方法一：写概述"></a>方法一：写概述</h4><p>在文章的front-matter中添加description，其中description中的内容就会被显示在首页上，其余一律不显示。</p>
-<pre><code>---
-title: 让首页显示部分内容
-date: 2021-02-08 18:15:10
-description: 这是显示在首页的概述，正文内容均会被隐藏。
----
-</code></pre>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">让首页显示部分内容</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2021-02-08 18:15:10</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">这是显示在首页的概述，正文内容均会被隐藏。</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
 <h4 id="方法二：文章截断"><a href="#方法二：文章截断" class="headerlink" title="方法二：文章截断"></a>方法二：文章截断</h4><p>在需要截断的地方加入</p>
-<pre><code>&lt;!--more--&gt;
-</code></pre>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--more--&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="四、一篇文章中设置多个tags"><a href="#四、一篇文章中设置多个tags" class="headerlink" title="四、一篇文章中设置多个tags"></a>四、一篇文章中设置多个tags</h3><figure class="highlight subunit"><table><tr><td class="code"><pre><span class="line"># 第一种方法</span><br><span class="line"><span class="keyword">tags:</span> [&#x27;abc&#x27;,&#x27;def&#x27;,&#x27;ghi&#x27;]</span><br><span class="line">--------------------------</span><br><span class="line"># 第二种方法</span><br><span class="line"><span class="keyword">tags:</span></span><br><span class="line">- abc</span><br><span class="line">- def</span><br><span class="line">- ghi</span><br></pre></td></tr></table></figure>
 <p>持续更新中…</p>
 ]]></content>
       <tags>
@@ -615,6 +577,26 @@ python3 remote_command_execution_vulnerability.py
 ]]></content>
       <tags>
         <tag>路由器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>获取ipv6地址</title>
+    <url>/2021/09/25/%E8%8E%B7%E5%8F%96ipv6%E5%9C%B0%E5%9D%80/</url>
+    <content><![CDATA[<h1 id="一、什么是ipv6"><a href="#一、什么是ipv6" class="headerlink" title="一、什么是ipv6"></a>一、什么是ipv6</h1><p>&nbsp; &nbsp;由于IPv4最大的问题在于网络地址资源不足，严重制约了互联网的应用和发展。IPv6的地址长度为128位，是IPv4地址长度的4倍。不仅能解决网络地址资源数量的问题，而且也解决了多种接入设备连入互联网的障碍</p>
+<ul>
+<li><h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a><strong>优点</strong></h3></li>
+</ul>
+<p>&nbsp; &nbsp;庞大的地址库，其地址数量号称可以为全世界的每一粒沙子编上一个地址</p>
+<ul>
+<li><h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a><strong>缺点</strong></h3></li>
+</ul>
+<p>&nbsp; &nbsp;目前获取的ipv6地址是动态地址，每隔一定时间会变化一次，无法直接作为公网ip使用，如果将ipv6地址固定下来，一旦泄露，很容易泄露个人隐私，遭受攻击</p>
+<hr>
+<p>&nbsp; &nbsp;那么如何开通ipv6地址呢？动态地址下又如何及时获取电脑当前的ipv6地址呢？（不需要用到ddns解析，免费又好用，要坚持看到最后哟😘）</p>
+<h1 id="二、如何开通ipv6地址"><a href="#二、如何开通ipv6地址" class="headerlink" title="二、如何开通ipv6地址"></a>二、如何开通ipv6地址</h1>]]></content>
+      <tags>
+        <tag>ipv6</tag>
+        <tag>XFile功能</tag>
       </tags>
   </entry>
 </search>
