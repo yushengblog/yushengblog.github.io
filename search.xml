@@ -391,7 +391,7 @@ git config --global user.email &#39;注册时候的邮箱&#39;
 <p>（3）生成SSH密钥</p>
 <pre><code>ssh-keygen -t rsa -C &#39;GitHub注册邮箱&#39;
 </code></pre>
-<p>输入命令后<strong>直接回车即可</strong>，在C盘的用户目录下会生成.ssh文件夹（我电脑上的目录为C:/Users/Misaka/.ssh），里面有私钥id_rsa和公钥id_rsa_pub</p>
+<p>输入命令后<strong>直接回车即可</strong>，在C盘的用户目录下会生成.ssh文件夹（我电脑上的目录为C:\Users\Misaka\.ssh），里面有私钥id_rsa和公钥id_rsa_pub</p>
 <p>（4）在GitHub上添加SSH keys</p>
 <p>点击GitHub头像下的Settings-&gt;SSH and GPG keys-&gt;New SSH key，将本地的公钥id_rsa_pub内容复制粘贴到其中即可</p>
 <img src="/2021/02/07/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/3.png" width="50%" height="50%">
@@ -597,6 +597,72 @@ python3 remote_command_execution_vulnerability.py
       <tags>
         <tag>ipv6</tag>
         <tag>XFile功能</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>部署狼人杀法官助手</title>
+    <url>/2025/12/05/%E9%83%A8%E7%BD%B2%E7%8B%BC%E4%BA%BA%E6%9D%80%E6%B3%95%E5%AE%98%E5%8A%A9%E6%89%8B/</url>
+    <content><![CDATA[<p>&nbsp; &nbsp;从国内来泰国公司支援的同事带了狼人杀卡牌，大家闲来无事便吃着火锅，玩着卡牌，狼人杀还是挺上头的，就是上帝不好当，人太多了，上帝经常忘记大家的身份和晚上的一些“小动作”，于是我便想着我们伟大的github上是不是有相关的项目可以借用一下😁。嘿！您猜怎么着？有的兄弟，有的！</p>
+<hr>
+<h2 id="一、项目部署到本地"><a href="#一、项目部署到本地" class="headerlink" title="一、项目部署到本地"></a>一、项目部署到本地</h2><h3 id="1-项目地址"><a href="#1-项目地址" class="headerlink" title="1.项目地址"></a>1.项目地址</h3><blockquote>
+<p><a href="https://github.com/yuanluoyue/werewolves-record">https://github.com/yuanluoyue/werewolves-record</a></p>
+</blockquote>
+<p>感谢原落月大佬的项目，原项目里有在线体验地址的，可惜现在已经404了，不过没关系，文末我会放我在github上部署的链接，大家可以直接使用</p>
+<h3 id="2-Node-js下载和安装"><a href="#2-Node-js下载和安装" class="headerlink" title="2.Node.js下载和安装"></a>2.Node.js下载和安装</h3><blockquote>
+<p><a href="https://nodejs.org/en/">https://nodejs.org/en/</a></p>
+</blockquote>
+<h3 id="3-Git下载和安装"><a href="#3-Git下载和安装" class="headerlink" title="3.Git下载和安装"></a>3.Git下载和安装</h3><blockquote>
+<p><a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></p>
+</blockquote>
+<h3 id="4-将项目Clone（下载）到本地（两种方法）"><a href="#4-将项目Clone（下载）到本地（两种方法）" class="headerlink" title="4.将项目Clone（下载）到本地（两种方法）"></a>4.将项目Clone（下载）到本地（两种方法）</h3><p>首先创建一个文件夹来放置项目文件比如：werewolves</p>
+<p>(1) 直接在项目主页下载，然后解压到werewolves文件夹内</p>
+<img src="/2025/12/05/%E9%83%A8%E7%BD%B2%E7%8B%BC%E4%BA%BA%E6%9D%80%E6%B3%95%E5%AE%98%E5%8A%A9%E6%89%8B/1.png" width="100%" height="100%">
+
+<p>(2) 使用 Git 下载<br><br>打开werewolves文件夹，在此处右键打开git bash，然后输入如下命令并回车</p>
+<pre><code>git clone https://github.com/yuanluoyue/werewolves-record.git
+</code></pre>
+<p>等待命令执行完成，文件夹里就会出现一个名为 werewolves-record 的新文件夹，里面就是项目所有文件</p>
+<p>(3) 安装项目依赖 (<code>npm install</code>)<br><br>在本地项目文件夹内右键打开控制台，输入以下命令</p>
+<pre>npm install</pre>
+
+<p>如果卡住或报错，可以尝试使用镜像源</p>
+<pre><code>npm install --registry=https://registry.npmmirror.com
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>镜像源名称</th>
+<th>地址</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>npm 官方源</td>
+<td><a href="https://registry.npmjs.org/">https://registry.npmjs.org/</a></td>
+</tr>
+<tr>
+<td>npm 官方源</td>
+<td><a href="https://registry.npmmirror.com/">https://registry.npmmirror.com/</a></td>
+</tr>
+<tr>
+<td>npm 官方源</td>
+<td><a href="https://mirrors.cloud.tencent.com/npm/">https://mirrors.cloud.tencent.com/npm/</a></td>
+</tr>
+<tr>
+<td>npm 官方源</td>
+<td><a href="https://mirrors.huaweicloud.com/repository/npm/">https://mirrors.huaweicloud.com/repository/npm/</a></td>
+</tr>
+<tr>
+<td>npm 官方源</td>
+<td><a href="https://npm.aliyun.com/">https://npm.aliyun.com</a></td>
+</tr>
+<tr>
+<td>(3)</td>
+<td></td>
+</tr>
+</tbody></table>
+]]></content>
+      <tags>
+        <tag>娱乐</tag>
       </tags>
   </entry>
 </search>
