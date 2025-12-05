@@ -391,7 +391,7 @@ git config --global user.email &#39;注册时候的邮箱&#39;
 <p>（3）生成SSH密钥</p>
 <pre><code>ssh-keygen -t rsa -C &#39;GitHub注册邮箱&#39;
 </code></pre>
-<p>输入命令后<strong>直接回车即可</strong>，在C盘的用户目录下会生成.ssh文件夹（我电脑上的目录为C:\Users\Misaka.ssh），里面有私钥id_rsa和公钥id_rsa_pub</p>
+<p>输入命令后<strong>直接回车即可</strong>，在C盘的用户目录下会生成.ssh文件夹（我电脑上的目录为C:/Users/Misaka/.ssh），里面有私钥id_rsa和公钥id_rsa_pub</p>
 <p>（4）在GitHub上添加SSH keys</p>
 <p>点击GitHub头像下的Settings-&gt;SSH and GPG keys-&gt;New SSH key，将本地的公钥id_rsa_pub内容复制粘贴到其中即可</p>
 <img src="/2021/02/07/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/3.png" width="50%" height="50%">
