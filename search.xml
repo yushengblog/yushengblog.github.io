@@ -463,6 +463,22 @@ hexo d
       </tags>
   </entry>
   <entry>
+    <title>开始我的博客之旅</title>
+    <url>/2021/02/02/%E5%BC%80%E5%A7%8B%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B9%8B%E6%97%85/</url>
+    <content><![CDATA[<h1 id="新的篇章"><a href="#新的篇章" class="headerlink" title="新的篇章"></a>新的篇章</h1><p>经过一晚的奋战，我的第一篇博客发表啦，后续会更新记录我的博客搭建方法</p>
+<p><del>希望能坚持写下去</del></p>
+<a id="more"></a>
+
+<p>bye~</p>
+<hr>
+<img src="/2021/02/02/%E5%BC%80%E5%A7%8B%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B9%8B%E6%97%85/摸鱼.jpg" width="30%" height="30%">
+
+]]></content>
+      <tags>
+        <tag>日常</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>打破枷锁</title>
     <url>/2021/02/02/%E6%89%93%E7%A0%B4%E6%9E%B7%E9%94%81/</url>
     <content><![CDATA[<h1 id="小米路由器4A千兆版刷机"><a href="#小米路由器4A千兆版刷机" class="headerlink" title="小米路由器4A千兆版刷机"></a>小米路由器4A千兆版刷机</h1><p>&nbsp; &nbsp;去年双十一买了个小米4A千兆版的路由器，本来对路由方面一窍不通，却就此打开了新世界的大门。为了能实现ipv6的网络串流，软磨硬泡的找宽带师傅要到了移动光猫的超密（网上的密码一般都是初始超密，但超密会变的，所以最方便的还是找师傅要），之前询问客服和师傅，要求把光猫改为桥接，要不就说改不了，要不就说不会，好吧，自己动手，丰衣足食。</p>
@@ -564,22 +580,6 @@ python3 remote_command_execution_vulnerability.py
       </tags>
   </entry>
   <entry>
-    <title>开始我的博客之旅</title>
-    <url>/2021/02/02/%E5%BC%80%E5%A7%8B%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B9%8B%E6%97%85/</url>
-    <content><![CDATA[<h1 id="新的篇章"><a href="#新的篇章" class="headerlink" title="新的篇章"></a>新的篇章</h1><p>经过一晚的奋战，我的第一篇博客发表啦，后续会更新记录我的博客搭建方法</p>
-<p><del>希望能坚持写下去</del></p>
-<a id="more"></a>
-
-<p>bye~</p>
-<hr>
-<img src="/2021/02/02/%E5%BC%80%E5%A7%8B%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B9%8B%E6%97%85/摸鱼.jpg" width="30%" height="30%">
-
-]]></content>
-      <tags>
-        <tag>日常</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>获取ipv6地址</title>
     <url>/2021/09/25/%E8%8E%B7%E5%8F%96ipv6%E5%9C%B0%E5%9D%80/</url>
     <content><![CDATA[<h1 id="一、什么是ipv6"><a href="#一、什么是ipv6" class="headerlink" title="一、什么是ipv6"></a>一、什么是ipv6</h1><p>&nbsp; &nbsp;由于IPv4最大的问题在于网络地址资源不足，严重制约了互联网的应用和发展。IPv6的地址长度为128位，是IPv4地址长度的4倍。不仅能解决网络地址资源数量的问题，而且也解决了多种接入设备连入互联网的障碍</p>
@@ -602,32 +602,28 @@ python3 remote_command_execution_vulnerability.py
   <entry>
     <title>部署狼人杀法官助手</title>
     <url>/2025/12/05/%E9%83%A8%E7%BD%B2%E7%8B%BC%E4%BA%BA%E6%9D%80%E6%B3%95%E5%AE%98%E5%8A%A9%E6%89%8B/</url>
-    <content><![CDATA[<p>&nbsp; &nbsp;从国内来泰国公司支援的同事带了狼人杀卡牌，大家闲来无事便吃着火锅，玩着卡牌，狼人杀还是挺上头的，就是上帝不好当，人太多了，上帝经常忘记大家的身份和晚上的一些“小动作”，于是我便想着我们伟大的github上是不是有相关的项目可以借用一下😁。嘿！您猜怎么着？有的兄弟，有的！</p>
+    <content><![CDATA[<p>&nbsp; &nbsp;从国内来泰国公司支援的同事带了狼人杀卡牌，大家闲来无事便吃着火锅，玩着卡牌，狼人杀还是挺上头的，就是上帝不好当，人太多了，上帝经常忘记大家的身份和晚上的一些“小动作”。于是我便想着我们伟大的Github上是不是有相关的项目可以借用一下😁。嘿！您猜怎么着？有的兄弟，有的！</p>
 <hr>
 <h2 id="一、项目部署到本地"><a href="#一、项目部署到本地" class="headerlink" title="一、项目部署到本地"></a>一、项目部署到本地</h2><h3 id="1-项目地址"><a href="#1-项目地址" class="headerlink" title="1.项目地址"></a>1.项目地址</h3><blockquote>
 <p><a href="https://github.com/yuanluoyue/werewolves-record">https://github.com/yuanluoyue/werewolves-record</a></p>
 </blockquote>
-<p>感谢原落月大佬的项目，原项目里有在线体验地址的，可惜现在已经404了，不过没关系，文末我会放我在github上部署的链接，大家可以直接使用</p>
+<p>感谢原落月大佬的项目，原项目里有在线体验地址的，可惜现在已经404了，不过没关系，<a href="#%E7%AC%AC%E4%B8%89%E7%AB%A0">文末</a>我会放我在Github上部署的链接，大家可以直接使用</p>
 <h3 id="2-Node-js下载和安装"><a href="#2-Node-js下载和安装" class="headerlink" title="2.Node.js下载和安装"></a>2.Node.js下载和安装</h3><blockquote>
 <p><a href="https://nodejs.org/en/">https://nodejs.org/en/</a></p>
 </blockquote>
 <h3 id="3-Git下载和安装"><a href="#3-Git下载和安装" class="headerlink" title="3.Git下载和安装"></a>3.Git下载和安装</h3><blockquote>
 <p><a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></p>
 </blockquote>
-<h3 id="4-将项目Clone（下载）到本地（两种方法）"><a href="#4-将项目Clone（下载）到本地（两种方法）" class="headerlink" title="4.将项目Clone（下载）到本地（两种方法）"></a>4.将项目Clone（下载）到本地（两种方法）</h3><p>首先创建一个文件夹来放置项目文件比如：werewolves</p>
-<p>(1) 直接在项目主页下载，然后解压到werewolves文件夹内</p>
-<img src="/2025/12/05/%E9%83%A8%E7%BD%B2%E7%8B%BC%E4%BA%BA%E6%9D%80%E6%B3%95%E5%AE%98%E5%8A%A9%E6%89%8B/1.png" width="100%" height="100%">
+<h3 id="4-将项目Clone（下载）到本地（两种方法）"><a href="#4-将项目Clone（下载）到本地（两种方法）" class="headerlink" title="4.将项目Clone（下载）到本地（两种方法）"></a>4.将项目Clone（下载）到本地（两种方法）</h3><p>首先创建一个文件夹来放置项目文件比如：<code>werewolves</code></p>
+<h4 id="1-直接在项目主页下载，然后解压到werewolves文件夹内"><a href="#1-直接在项目主页下载，然后解压到werewolves文件夹内" class="headerlink" title="(1) 直接在项目主页下载，然后解压到werewolves文件夹内"></a>(1) 直接在项目主页下载，然后解压到<code>werewolves</code>文件夹内</h4><img src="/2025/12/05/%E9%83%A8%E7%BD%B2%E7%8B%BC%E4%BA%BA%E6%9D%80%E6%B3%95%E5%AE%98%E5%8A%A9%E6%89%8B/1.png" width="100%" height="100%">
 
-<p>(2) 使用 Git 下载<br><br>打开werewolves文件夹，在此处右键打开git bash，然后输入如下命令并回车</p>
-<pre><code>git clone https://github.com/yuanluoyue/werewolves-record.git
-</code></pre>
+<h4 id="2-使用-Git-下载"><a href="#2-使用-Git-下载" class="headerlink" title="(2) 使用 Git 下载"></a>(2) 使用 Git 下载</h4><p><br>打开<code>werewolves</code>文件夹，在此处右键打开git bash，然后输入如下命令并回车</p>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">git clone https:<span class="regexp">//gi</span>thub.com<span class="regexp">/yuanluoyue/</span>werewolves-record.git</span><br></pre></td></tr></table></figure>
 <p>等待命令执行完成，文件夹里就会出现一个名为 werewolves-record 的新文件夹，里面就是项目所有文件</p>
-<p>(3) 安装项目依赖 (<code>npm install</code>)<br><br>在本地项目文件夹内右键打开控制台，输入以下命令</p>
-<pre>npm install</pre>
-
+<h4 id="3-安装项目依赖-npm-install"><a href="#3-安装项目依赖-npm-install" class="headerlink" title="(3) 安装项目依赖 (npm install)"></a>(3) 安装项目依赖 (<code>npm install</code>)</h4><p><br>在本地项目文件夹内右键打开控制台，输入以下命令</p>
+<figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">npm <span class="keyword">install</span></span><br></pre></td></tr></table></figure>
 <p>如果卡住或报错，可以尝试使用镜像源</p>
-<pre><code>npm install --registry=https://registry.npmmirror.com
-</code></pre>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">npm install --registry=https:<span class="regexp">//</span>registry.npmmirror.com</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -640,26 +636,54 @@ python3 remote_command_execution_vulnerability.py
 <td><a href="https://registry.npmjs.org/">https://registry.npmjs.org/</a></td>
 </tr>
 <tr>
-<td>npm 官方源</td>
+<td>淘宝源</td>
 <td><a href="https://registry.npmmirror.com/">https://registry.npmmirror.com/</a></td>
 </tr>
 <tr>
-<td>npm 官方源</td>
+<td>腾讯云源</td>
 <td><a href="https://mirrors.cloud.tencent.com/npm/">https://mirrors.cloud.tencent.com/npm/</a></td>
 </tr>
 <tr>
-<td>npm 官方源</td>
+<td>华为云源</td>
 <td><a href="https://mirrors.huaweicloud.com/repository/npm/">https://mirrors.huaweicloud.com/repository/npm/</a></td>
 </tr>
 <tr>
-<td>npm 官方源</td>
+<td>阿里云源</td>
 <td><a href="https://npm.aliyun.com/">https://npm.aliyun.com</a></td>
 </tr>
-<tr>
-<td>(3)</td>
-<td></td>
-</tr>
 </tbody></table>
+<h3 id="5-运行项目"><a href="#5-运行项目" class="headerlink" title="5.运行项目"></a>5.运行项目</h3><figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line">npm <span class="keyword">run</span><span class="bash"> serve</span></span><br></pre></td></tr></table></figure>
+<p>命令运行后，窗口会显示编译信息。当最后出现类似于 <code>App running at: - Local: http://localhost:8081</code>的字样时，就表示启动成功了，进入网址愉快的玩耍吧！</p>
+<blockquote>
+<p><a href="http://localhost:8081/">http://localhost:8081</a></p>
+</blockquote>
+<h2 id="二、项目部署到Github（进阶）"><a href="#二、项目部署到Github（进阶）" class="headerlink" title="二、项目部署到Github（进阶）"></a>二、项目部署到Github（进阶）</h2><p>如果你的电脑没有公网，内网穿透玩的也不熟练，那么可以让伟大的Github来托管一下我们的网页,这样在哪都可以愉快的玩耍了（国内网络环境问题，可能Github上不去，部署到gitee也是可以的）</p>
+<h3 id="1-新建Github仓库"><a href="#1-新建Github仓库" class="headerlink" title="1.新建Github仓库"></a>1.新建Github仓库</h3><img src="/2025/12/05/%E9%83%A8%E7%BD%B2%E7%8B%BC%E4%BA%BA%E6%9D%80%E6%B3%95%E5%AE%98%E5%8A%A9%E6%89%8B/2.png" width="50%" height="50%">
+<img src="/2025/12/05/%E9%83%A8%E7%BD%B2%E7%8B%BC%E4%BA%BA%E6%9D%80%E6%B3%95%E5%AE%98%E5%8A%A9%E6%89%8B/3.png" width="50%" height="50%">
+
+<p>如果这是你的第一个项目，仓库名可以直接写成<code>用户名.github.io</code>，这样后面少改一个文件；如果<code>用户名.github.io</code>的仓库名已经被使用了，就命名一个新的，比如<code>werewolves-record</code></p>
+<h3 id="2-建立新分支gh-pages"><a href="#2-建立新分支gh-pages" class="headerlink" title="2.建立新分支gh-pages"></a>2.建立新分支<code>gh-pages</code></h3><img src="/2025/12/05/%E9%83%A8%E7%BD%B2%E7%8B%BC%E4%BA%BA%E6%9D%80%E6%B3%95%E5%AE%98%E5%8A%A9%E6%89%8B/4.png" width="50%" height="50%">
+<img src="/2025/12/05/%E9%83%A8%E7%BD%B2%E7%8B%BC%E4%BA%BA%E6%9D%80%E6%B3%95%E5%AE%98%E5%8A%A9%E6%89%8B/5.png" width="50%" height="50%">
+<img src="/2025/12/05/%E9%83%A8%E7%BD%B2%E7%8B%BC%E4%BA%BA%E6%9D%80%E6%B3%95%E5%AE%98%E5%8A%A9%E6%89%8B/6.png" width="50%" height="50%">
+
+<h3 id="3-在项目根目录的vue-config-js文件中，将-改为你的仓库名-比如-werewolves-record"><a href="#3-在项目根目录的vue-config-js文件中，将-改为你的仓库名-比如-werewolves-record" class="headerlink" title="3.在项目根目录的vue.config.js文件中，将./改为你的仓库名,比如/werewolves-record/"></a>3.在项目根目录的<code>vue.config.js</code>文件中，将<code>./</code>改为你的仓库名,比如<code>/werewolves-record/</code></h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//将如下代码</span></span><br><span class="line"> <span class="keyword">module</span>.<span class="keyword">exports</span> = &#123;</span><br><span class="line">    publicPath: <span class="string">&#x27;./&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//修改为</span></span><br><span class="line"> <span class="keyword">module</span>.<span class="keyword">exports</span> = &#123;</span><br><span class="line">    publicPath: <span class="string">&#x27;/werewolves-record/&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//如果仓库名已经是 用户名.github.io，无需修改，网站会直接部署在根域名下</span></span><br></pre></td></tr></table></figure>
+<h3 id="4-本地构建项目"><a href="#4-本地构建项目" class="headerlink" title="4.本地构建项目"></a>4.本地构建项目</h3><p>在本地项目文件夹内打开终端运行构建命令</p>
+<figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line">npm <span class="keyword">run</span><span class="bash"> build</span></span><br></pre></td></tr></table></figure>
+<p>项目文件夹内会生成一个<code>dist</code>目录，里面就是完整的网站文件（如果修改了项目文件，如<code>vue.config.js</code>文件中的仓库名称，就需要重新构建）</p>
+<h3 id="5-将构建好的文件推送到GitHub"><a href="#5-将构建好的文件推送到GitHub" class="headerlink" title="5.将构建好的文件推送到GitHub"></a>5.将构建好的文件推送到GitHub</h3><h4 id="方法一：在项目目录打开终端，运行以下命令来安装一个方便的部署工具，并一键推送"><a href="#方法一：在项目目录打开终端，运行以下命令来安装一个方便的部署工具，并一键推送" class="headerlink" title="方法一：在项目目录打开终端，运行以下命令来安装一个方便的部署工具，并一键推送"></a>方法一：在项目目录打开终端，运行以下命令来安装一个方便的部署工具，并一键推送</h4><figure class="highlight mipsasm"><table><tr><td class="code"><pre><span class="line">npm <span class="keyword">install </span>-g push-<span class="keyword">dir </span>&amp;&amp; push-<span class="keyword">dir </span>--<span class="keyword">dir=dist </span>--<span class="keyword">branch=gh-pages </span>--force</span><br></pre></td></tr></table></figure>
+<p>这条命令会做三件事：<br><br>安装 push-dir 工具（已安装过则跳过）;<br><br>将 dist 文件夹的内容强制推送到你远程仓库（需提前关联好）的 gh-pages 分支;<br><br>如果该分支不存在，会自动创建。</p>
+<h4 id="方法二：手动上传到gh-pages分支"><a href="#方法二：手动上传到gh-pages分支" class="headerlink" title="方法二：手动上传到gh-pages分支"></a>方法二：手动上传到<code>gh-pages</code>分支</h4><img src="/2025/12/05/%E9%83%A8%E7%BD%B2%E7%8B%BC%E4%BA%BA%E6%9D%80%E6%B3%95%E5%AE%98%E5%8A%A9%E6%89%8B/7.png" width="100%" height="100%">
+
+<p>在github的项目仓库中，切换到<code>gh-pages</code>分支，选择<code>Add file</code>中的<code>Upload files</code>，然后便可以将<code>dist</code>文件夹内的所有内容拖拽上传到该分支中</p>
+<h3 id="6-在GitHub上开启Pages服务并访问"><a href="#6-在GitHub上开启Pages服务并访问" class="headerlink" title="6.在GitHub上开启Pages服务并访问"></a>6.在GitHub上开启Pages服务并访问</h3><img src="/2025/12/05/%E9%83%A8%E7%BD%B2%E7%8B%BC%E4%BA%BA%E6%9D%80%E6%B3%95%E5%AE%98%E5%8A%A9%E6%89%8B/8.png" width="100%" height="100%">
+
+<p>确认你的设置均如图中所示，然后便可以打开网页地址愉快的玩耍了</p>
+<p><a id="第三章"></a></p>
+<h2 id="三、懒人福利"><a href="#三、懒人福利" class="headerlink" title="三、懒人福利"></a>三、懒人福利</h2><p>有的兄弟！有的！那还说啥呢，玩去吧~</p>
+<blockquote>
+<p><a href="https://yushengblog.github.io/werewolves-record/">https://yushengblog.github.io/werewolves-record/</a></p>
+</blockquote>
+<p>因为众所周知的网络问题，Github如果登不上去那就没法用了。如果有时间，我就放一个到Gitee上吧</p>
 ]]></content>
       <tags>
         <tag>娱乐</tag>
