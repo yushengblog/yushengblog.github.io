@@ -620,7 +620,7 @@ python3 remote_command_execution_vulnerability.py
 <h4 id="2-使用-Git-下载"><a href="#2-使用-Git-下载" class="headerlink" title="(2) 使用 Git 下载"></a>(2) 使用 Git 下载</h4><p><br>打开<code>werewolves</code>文件夹，在此处右键打开git bash，然后输入如下命令并回车</p>
 <figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">git clone https:<span class="regexp">//gi</span>thub.com<span class="regexp">/yuanluoyue/</span>werewolves-record.git</span><br></pre></td></tr></table></figure>
 <p>等待命令执行完成，文件夹里就会出现一个名为 werewolves-record 的新文件夹，里面就是项目所有文件</p>
-<h4 id="3-安装项目依赖-npm-install"><a href="#3-安装项目依赖-npm-install" class="headerlink" title="(3) 安装项目依赖 (npm install)"></a>(3) 安装项目依赖 (<code>npm install</code>)</h4><p><br>在本地项目文件夹内右键打开控制台，输入以下命令</p>
+<h4 id="3-安装项目依赖-npm-install"><a href="#3-安装项目依赖-npm-install" class="headerlink" title="(3) 安装项目依赖 (npm install)"></a>(3) 安装项目依赖 (<code>npm install</code>)</h4><p><br>在本地项目文件夹内右键打开终端，输入以下命令</p>
 <figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">npm <span class="keyword">install</span></span><br></pre></td></tr></table></figure>
 <p>如果卡住或报错，可以尝试使用镜像源</p>
 <figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">npm install --registry=https:<span class="regexp">//</span>registry.npmmirror.com</span><br></pre></td></tr></table></figure>
@@ -679,7 +679,7 @@ python3 remote_command_execution_vulnerability.py
 
 <p>确认你的设置均如图中所示，然后便可以打开网页地址愉快的玩耍了</p>
 <p><a id="第三章"></a></p>
-<h2 id="三、懒人福利"><a href="#三、懒人福利" class="headerlink" title="三、懒人福利"></a>三、懒人福利</h2><p>有的兄弟！有的！那还说啥呢，玩去吧~</p>
+<h2 id="三、懒人福利🎁"><a href="#三、懒人福利🎁" class="headerlink" title="三、懒人福利🎁"></a>三、懒人福利🎁</h2><p>有的兄弟！有的！那还说啥呢，玩去吧~</p>
 <blockquote>
 <p><a href="https://yushengblog.github.io/werewolves-record/">https://yushengblog.github.io/werewolves-record/</a></p>
 </blockquote>
